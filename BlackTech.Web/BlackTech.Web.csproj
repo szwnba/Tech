@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectGuid>{3E7DEBDF-20A8-4BE7-8BDE-6A42C7AD91C1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlackTech.Web</RootNamespace>
+    <AssemblyName>BlackTech.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Development|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(Configuration)</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net, Version=4.5.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlackTech.Lib\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlackTech.Lib\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlackTech.Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Transformer.NET, Version=2.1.1.22883, Culture=neutral, PublicKeyToken=e274d618e7c603a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlackTech.Lib\Transformer.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\UI\UIHelpers.cs" />
+    <Compile Include="Webforms\Calendar\Shared\Code\Data.cs" />
+    <Compile Include="Webforms\Calendar\Shared\Code\RemoteService.asmx.cs">
+      <DependentUpon>RemoteService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx.cs">
+      <DependentUpon>EventsViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx.designer.cs">
+      <DependentUpon>EventsViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\css\clearad.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Webforms\Buttons\Overview\Default.aspx" />
+    <Content Include="Webforms\Buttons\Test_Button\config.xml" />
+    <Content Include="Webforms\Buttons\Test_Button\Default.aspx" />
+    <Content Include="Webforms\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
+    <Content Include="Webforms\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
+    <Content Include="Webforms\Getting_Started\Release_Documents\README\Default.aspx" />
+    <Content Include="Webforms\Buttons\Default_Button\config.xml" />
+    <Content Include="Webforms\Buttons\Default_Button\Default.aspx" />
+    <Content Include="Webforms\DBTool\SearchOrder\Default.aspx" />
+    <Content Include="Webforms\DBTool\DBObjectGenerate\Default.aspx" />
+    <Content Include="Webforms\ProjectTool\Redis\Default.aspx" />
+    <Content Include="Webforms\ProjectTool\Zeus\Default.aspx" />
+    <Content Include="Webforms\Toolbar\config.xml" />
+    <Content Include="Webforms\Toolbar\Context_Menu\config.xml" />
+    <Content Include="Webforms\Toolbar\Context_Menu\Default.aspx" />
+    <Content Include="Webforms\Toolbar\Flat_Toolbar\config.xml" />
+    <Content Include="Webforms\Toolbar\Flat_Toolbar\Default.aspx" />
+    <Content Include="Webforms\Toolbar\Overview\config.xml" />
+    <Content Include="Webforms\Toolbar\Overview\Default.aspx" />
+    <Content Include="Webforms\Toolbar\Overview\images\saving.gif" />
+    <Content Include="Global.asax" />
+    <Content Include="resources\fonts\fontawesome-webfont.svg" />
+    <Content Include="resources\fonts\LICENSE_TITILLIUMTEXT.txt" />
+    <Content Include="resources\fonts\OpenSans-Italic-webfont.svg" />
+    <Content Include="resources\fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="resources\fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="resources\fonts\OpenSans-Semibold-webfont.svg" />
+    <Content Include="resources\fonts\TitilliumText25L003-webfont.svg" />
+    <Content Include="resources\fonts\TitilliumText25L005-webfont.svg" />
+    <Content Include="resources\icons\asterisk_orange.png" />
+    <Content Include="resources\icons\pencil.png" />
+    <Content Include="resources\images\404.png" />
+    <Content Include="resources\images\banner-2-small.png" />
+    <Content Include="resources\images\bg-main.png" />
+    <Content Include="resources\images\bgnoise.png" />
+    <Content Include="resources\images\black10.png" />
+    <Content Include="resources\images\button-bg-30tall.png" />
+    <Content Include="resources\images\commentlogo.png" />
+    <Content Include="resources\images\coolite.png" />
+    <Content Include="resources\images\ee-ad-bg.png" />
+    <Content Include="resources\images\ee-ad-content.png" />
+    <Content Include="resources\images\ee-ad-store-bg.png" />
+    <Content Include="resources\images\extdotnet-logo.svg" />
+    <Content Include="resources\images\extnet-mobile-final.svg" />
+    <Content Include="resources\images\grey.png" />
+    <Content Include="resources\images\grid-badge-bg.png" />
+    <Content Include="resources\images\grid.png" />
+    <Content Include="resources\images\icon-briefcase.png" />
+    <Content Include="resources\icons\docs.svg" />
+    <Content Include="resources\icons\download.svg" />
+    <Content Include="resources\icons\support.svg" />
+    <Content Include="resources\images\loading.gif" />
+    <Content Include="resources\images\logo.png" />
+    <Content Include="resources\images\noimage.png" />
+    <Content Include="resources\images\sample-over.gif" />
+    <Content Include="resources\images\screenshot.png" />
+    <Content Include="resources\images\TestLogo.png" />
+    <Content Include="resources\images\titlebar-badge-bg.png" />
+    <Content Include="resources\images\titlebar-bg.jpg" />
+    <Content Include="resources\images\titlebar-logo-bg.jpg" />
+    <Content Include="resources\images\welcome-bullet.png" />
+    <Content Include="resources\images\welcome-screens.png" />
+    <Content Include="resources\js\perfect-scrollbar.min.js" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fonts\fontawesome-webfont.eot" />
+    <None Include="resources\fonts\fontawesome-webfont.ttf" />
+    <None Include="resources\fonts\fontawesome-webfont.woff" />
+    <None Include="resources\fonts\OpenSans-Italic-webfont.eot" />
+    <None Include="resources\fonts\OpenSans-Italic-webfont.ttf" />
+    <None Include="resources\fonts\OpenSans-Italic-webfont.woff" />
+    <None Include="resources\fonts\OpenSans-Light-webfont.eot" />
+    <None Include="resources\fonts\OpenSans-Light-webfont.ttf" />
+    <None Include="resources\fonts\OpenSans-Light-webfont.woff" />
+    <None Include="resources\fonts\OpenSans-Regular-webfont.eot" />
+    <None Include="resources\fonts\OpenSans-Regular-webfont.ttf" />
+    <None Include="resources\fonts\OpenSans-Regular-webfont.woff" />
+    <None Include="resources\fonts\OpenSans-Semibold-webfont.eot" />
+    <None Include="resources\fonts\OpenSans-Semibold-webfont.ttf" />
+    <None Include="resources\fonts\OpenSans-Semibold-webfont.woff" />
+    <None Include="resources\fonts\TitilliumText25L003-webfont.eot" />
+    <None Include="resources\fonts\TitilliumText25L003-webfont.ttf" />
+    <None Include="resources\fonts\TitilliumText25L003-webfont.woff" />
+    <None Include="resources\fonts\TitilliumText25L005-webfont.eot" />
+    <None Include="resources\fonts\TitilliumText25L005-webfont.ttf" />
+    <None Include="resources\fonts\TitilliumText25L005-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home\Default.aspx" />
+    <Content Include="resources\icons\application.png" />
+    <Content Include="resources\icons\application_double.png" />
+    <Content Include="resources\icons\application_error.png" />
+    <Content Include="resources\icons\application_form.png" />
+    <Content Include="resources\icons\application_go.png" />
+    <Content Include="resources\icons\application_side_tree.png" />
+    <Content Include="resources\icons\application_view_columns.png" />
+    <Content Include="resources\icons\application_view_detail.png" />
+    <Content Include="resources\icons\application_view_tile.png" />
+    <Content Include="resources\icons\arrow_refresh.png" />
+    <Content Include="resources\icons\brick.png" />
+    <Content Include="resources\icons\button.png" />
+    <Content Include="resources\icons\buttons.png" />
+    <Content Include="resources\icons\clock.png" />
+    <Content Include="resources\icons\cog.png" />
+    <Content Include="resources\icons\color_swatch.png" />
+    <Content Include="resources\icons\compress.png" />
+    <Content Include="resources\icons\css.png" />
+    <Content Include="resources\icons\cup_black.png" />
+    <Content Include="resources\icons\desktop.png" />
+    <Content Include="resources\icons\editor.png" />
+    <Content Include="resources\icons\emoticon_smile.png" />
+    <Content Include="resources\icons\hourglass.png" />
+    <Content Include="resources\icons\information.png" />
+    <Content Include="resources\icons\keyboard.png" />
+    <Content Include="resources\icons\layout.png" />
+    <Content Include="resources\icons\lightning.png" />
+    <Content Include="resources\icons\link.png" />
+    <Content Include="resources\icons\page_white_code.png" />
+    <Content Include="resources\icons\page_white_csharp.png" />
+    <Content Include="resources\icons\plugin.png" />
+    <Content Include="resources\icons\script.png" />
+    <Content Include="resources\icons\script_code_red.png" />
+    <Content Include="resources\icons\shape_square_select.png" />
+    <Content Include="resources\icons\tab.png" />
+    <Content Include="resources\icons\table_multiple.png" />
+    <Content Include="resources\icons\tabpanel.png" />
+    <Content Include="resources\icons\textfield_rename.png" />
+    <Content Include="resources\icons\toolbar.png" />
+    <Content Include="resources\icons\viewport.png" />
+    <Content Include="resources\icons\wand.png" />
+    <Content Include="resources\icons\wrench.png" />
+    <Content Include="resources\images\ext_net_badge.gif" />
+    <Content Include="resources\images\ext_net_logo_small.gif" />
+    <Content Include="resources\js\main.js" />
+    <Content Include="Webforms\Buttons\Overview\thumbnail.gif" />
+    <Content Include="Webforms\Buttons\config.xml" />
+    <Content Include="resources\js\examples.js" />
+    <Content Include="resources\images\new.gif" />
+    <Content Include="resources\images\newgray.gif" />
+    <None Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Webforms\Buttons\Overview\arrow-down.gif" />
+    <Content Include="Webforms\Buttons\Overview\config.xml" />
+    <Content Include="Webforms\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="resources\css\examples.css" />
+    <Content Include="resources\css\main.css" />
+    <Content Include="resources\images\bg.gif" />
+    <Content Include="resources\images\collapse-all.gif" />
+    <Content Include="resources\images\expand-all.gif" />
+    <Content Include="resources\images\group-expand-sprite.gif" />
+    <Content Include="resources\images\loading32.gif" />
+    <Content Include="resources\images\layout-browser-hd-bg.gif" />
+    <Content Include="resources\images\noimage.gif" />
+    <Content Include="resources\images\title-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Webforms\Calendar\config.xml" />
+    <Content Include="Webforms\Calendar\Basic\config.xml" />
+    <Content Include="Webforms\Calendar\Basic\Default.aspx" />
+    <Content Include="Webforms\Calendar\Remote_Data\config.xml" />
+    <Content Include="Webforms\Calendar\Shared\Code\RemoteService.asmx" />
+    <Content Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx" />
+    <Content Include="Webforms\Calendar\Remote_Data\Default.aspx" />
+    <Content Include="Webforms\Calendar\Remote_Data\override.js" />
+    <Content Include="Webforms\Calendar\Shared\resources\css\main.css" />
+    <Content Include="Webforms\Calendar\Shared\resources\js\common.js" />
+    <Content Include="404.aspx" />
+    <Content Include="Code\UI\CommentsWindow.ascx" />
+    <Content Include="Webforms\Getting_Started\config.xml" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\add16.gif" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\add24.gif" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\add32.gif" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\config.xml" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\Default.aspx" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\overview.css" />
+    <Content Include="Webforms\Getting_Started\Component_Overview\themes.js" />
+    <Content Include="Webforms\Getting_Started\Overview\config.xml" />
+    <Content Include="Webforms\Getting_Started\Overview\Default.aspx" />
+    <Content Include="Webforms\Getting_Started\Overview\thumbnail.png" />
+    <Content Include="resources\icons\calendar.png" />
+    <Content Include="resources\icons\comments.png" />
+    <Content Include="resources\icons\comment_add.png" />
+    <Content Include="resources\images\item-hd4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="conf\" />
+    <Folder Include="Entity\" />
+    <Folder Include="resources\xml\" />
+    <Folder Include="Webforms\Calendar\Shared\resources\images\" />
+    <Folder Include="Webforms\Getting_Started\Overview\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\BlackTech.Lib\Ext.Net.dll" />
+    <Analyzer Include="..\BlackTech.Lib\Ext.Net.Utilities.dll" />
+    <Analyzer Include="..\BlackTech.Lib\Newtonsoft.Json.dll" />
+    <Analyzer Include="..\BlackTech.Lib\Transformer.NET.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51297</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51299/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>echo Deploying $(Configuration) files to bin\ (required by ASP.NET)
+
+del /q ..\*
+
+echo $(Configuration) &gt; ..\BuildMode.txt
+
+copy . ..\.
+
+echo Done deploying $(Configuration) DLLs.</PostBuildEvent>
+  </PropertyGroup>
+</Project>
