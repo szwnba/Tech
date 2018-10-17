@@ -77,7 +77,7 @@
                             <img src="../resources/images/banner.png">
                         </div>
                         <div class="notification-text" id="TestCL">
-                            <strong>Test Tool Online</strong>是一个在线测试工具系统，集合了一些常用的测试工具.
+                            <strong>BlackTech</strong>是一个在线辅助工具，集合一些日常的技术工具.
                        
                         </div>
                     </div>

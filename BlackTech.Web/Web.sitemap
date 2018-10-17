@@ -2,7 +2,9 @@
 <siteMap>
     <siteMapNode title="自媒体工具" icon=" fa-wrench">
       <siteMapNode title="文章处理" description="No description" url="/ProjectTool/Zeus/" />
-      <siteMapNode title="Redis文章处理" description="No description" url="/ProjectTool/Redis/" />
+      <siteMapNode title="通用文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
+      <siteMapNode title="语言翻译" description="No description" url="/ProjectTool/Redis2/" />
+      <siteMapNode title="音频转文字" description="No description" url="/ProjectTool/" />
     </siteMapNode>
   <siteMapNode title="大数据工具" icon=" fa fa-paint-brush">
     <siteMapNode title="爬虫工具" description="No description" url="/DBTool/SearchOrder/" />
@@ -11,11 +13,28 @@
   <siteMapNode title="站长工具" icon="fa fa-info-circle">
       <siteMapNode title="IP管理" description="No description" url="/Getting_Started/Overview/" />
       <siteMapNode title="邮件群发" description="No description" url="/Getting_Started/Overview1/" />
-    </siteMapNode>
+      <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon//" />
+  </siteMapNode>
+  
     <siteMapNode title="移动工具" icon="fa fa-calendar-o">
       <siteMapNode title="短信接口" description="No description" url="/Calendar/Basic/" />
       <siteMapNode title="群发短信" description="No description" url="/Calendar/Remote_Data2/" />
       <siteMapNode title="虚拟定位" description="No description" url="/Calendar/Remote_Data3/" />
       <siteMapNode title="更换串号" description="No description" url="/Calendar/Remote_Data4/" />
     </siteMapNode>
+  <siteMapNode title="图像工具" icon="fa fa-info-circle">
+    <siteMapNode title="Ifavicon在线制作" description="No description" url="https://tool.lu/favicon3/" />
+    <siteMapNode title="云端超级应用空间" description="No description" url="https://uzer.me//" />
+    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon//" />
+  </siteMapNode>
+  <siteMapNode title="金融理财" icon="fa fa-info-circle">
+    <siteMapNode title="Ifavicon在线制作" description="No description" url="https://tool.lu/favicon/" />
+    <siteMapNode title="云端超级应用空间" description="No description" url="https://uzer.me2//" />
+    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon4//" />
+  </siteMapNode>
+  <siteMapNode title="日常生活" icon="fa fa-info-circle">
+    <siteMapNode title="天气" description="No description" url="https://tool.lu/favicon1/" />
+    <siteMapNode title="在线美文美句生成" description="No description" url="https://uzer.me/1/" />
+    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon1//" />
+  </siteMapNode>
 </siteMap>
