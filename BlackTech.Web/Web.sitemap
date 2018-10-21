@@ -1,40 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <siteMap>
-    <siteMapNode title="自媒体工具" icon=" fa-wrench">
-      <siteMapNode title="文章处理" description="No description" url="/ProjectTool/Zeus/" />
-      <siteMapNode title="通用文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
-      <siteMapNode title="语言翻译" description="No description" url="/ProjectTool/Redis2/" />
+   <siteMapNode title="项目计划" icon=" fa-wrench">
+           <siteMapNode title="TODO" description="No description" url="/Plan/TODO/" />
+    </siteMapNode>
+    <siteMapNode title="自媒体" icon=" fa-wrench">
+      <siteMapNode title="热文检索" description="No description" url="/ProjectTool/Zeu2s/" />
+      <siteMapNode title="智能洗稿" description="No description" url="/ProjectTool/Zeus/" />
+      <siteMapNode title="图片文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
+      <siteMapNode title="外文翻译" description="No description" url="/ProjectTool/Redis2/" />
       <siteMapNode title="音频转文字" description="No description" url="/ProjectTool/" />
     </siteMapNode>
-  <siteMapNode title="大数据工具" icon=" fa fa-paint-brush">
-    <siteMapNode title="爬虫工具" description="No description" url="/DBTool/SearchOrder/" />
-    <siteMapNode title="数据分析" description="No description" url="/DBTool/DBObjectGenerate/" />
+  <siteMapNode title="数据挖掘" icon=" fa fa-paint-brush">
+    <siteMapNode title="摄影工作室数据分析" description="No description" url="/DBTool/SearchOrde1r/" />
+    <siteMapNode title="深圳房价趋势" description="No description" url="/DBTool/DBObjectGener2ate2/" />
+    <siteMapNode title="黑科技营销产品" description="No description" url="/DBTool/DBObjectGenerate2/" />
+    <siteMapNode title="淘宝热门商品趋势" description="No description" url="/DBTool/DBObjectGenerat3e/" />
   </siteMapNode>
-  <siteMapNode title="站长工具" icon="fa fa-info-circle">
-      <siteMapNode title="IP管理" description="No description" url="/Getting_Started/Overview/" />
+  <siteMapNode title="金融理财" icon="fa fa-paint-brush">
+    <siteMapNode title="股票智能投顾" description="No description" url="/PhotoTool/Favico2n/" />
+  </siteMapNode>
+  <siteMapNode title="站长运营" icon="fa fa-info-circle">
+      <siteMapNode title="IP代理管理" description="No description" url="/Getting_Started/Overview/" />
       <siteMapNode title="邮件群发" description="No description" url="/Getting_Started/Overview1/" />
       <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon//" />
   </siteMapNode>
-  
-    <siteMapNode title="移动工具" icon="fa fa-calendar-o">
+    <siteMapNode title="移动短信" icon="fa fa-calendar-o">
       <siteMapNode title="短信接口" description="No description" url="/Calendar/Basic/" />
       <siteMapNode title="群发短信" description="No description" url="/Calendar/Remote_Data2/" />
       <siteMapNode title="虚拟定位" description="No description" url="/Calendar/Remote_Data3/" />
       <siteMapNode title="更换串号" description="No description" url="/Calendar/Remote_Data4/" />
     </siteMapNode>
-  <siteMapNode title="图像工具" icon="fa fa-info-circle">
-    <siteMapNode title="Ifavicon在线制作" description="No description" url="https://tool.lu/favicon3/" />
-    <siteMapNode title="云端超级应用空间" description="No description" url="https://uzer.me//" />
-    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon//" />
-  </siteMapNode>
-  <siteMapNode title="金融理财" icon="fa fa-info-circle">
-    <siteMapNode title="Ifavicon在线制作" description="No description" url="https://tool.lu/favicon/" />
-    <siteMapNode title="云端超级应用空间" description="No description" url="https://uzer.me2//" />
-    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon4//" />
-  </siteMapNode>
-  <siteMapNode title="日常生活" icon="fa fa-info-circle">
-    <siteMapNode title="天气" description="No description" url="https://tool.lu/favicon1/" />
-    <siteMapNode title="在线美文美句生成" description="No description" url="https://uzer.me/1/" />
-    <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon1//" />
+  <siteMapNode title="图像处理" icon="fa fa-hand-pointer-o">
+    <siteMapNode title="Ifavicon在线制作" description="No description" url="/PhotoTool/Favicon/" />
   </siteMapNode>
 </siteMap>

@@ -125,6 +125,12 @@
     <Content Include="Webforms\Buttons\Default_Button\Default.aspx" />
     <Content Include="Webforms\DBTool\SearchOrder\Default.aspx" />
     <Content Include="Webforms\DBTool\DBObjectGenerate\Default.aspx" />
+    <Content Include="Webforms\Media\Notepad\Default.aspx" />
+    <Content Include="Webforms\Media\Notepad\todo.txt" />
+    <Content Include="Webforms\PhotoTool\Favicon\Default.aspx" />
+    <Content Include="Webforms\PhotoTool\Photoshop\Default.aspx" />
+    <Content Include="Webforms\Plan\TODO\Default.aspx" />
+    <Content Include="Webforms\Plan\TODO\todo.txt" />
     <Content Include="Webforms\ProjectTool\Redis\Default.aspx" />
     <Content Include="Webforms\ProjectTool\Zeus\Default.aspx" />
     <Content Include="Webforms\Toolbar\config.xml" />

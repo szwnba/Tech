@@ -86,9 +86,7 @@
                 <br />
                 <h3>其它常用网站连接</h3>
                 <ul class="popular-links">
-                    <li><a href="http://xxx.com/apitroubleshootingsys/">一站式测试系统</a></li>
-                    <li><a href="http://xxx/test-tool/">SOA服务测试工具</a></li>
-                    <li><a href="http://xxx.com/SOA.TESTTOOL/default.aspx">WebService Test Tool</a></li>
+                    <li><a href="https://uzer.me/">云端超级应用空间</a></li>
                 </ul>
 
             </div>

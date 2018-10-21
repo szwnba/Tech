@@ -8,10 +8,10 @@
 
 
 <script runat="server">
-  
-  
+
+
     protected string mobileVersion = "4.1";
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -36,9 +36,9 @@
         }
 
 
-        this.exampleTree.ExpandAll();
+        //this.exampleTree.ExpandAll();
 
-     
+
 
     }
 
@@ -63,7 +63,7 @@
     {
         return Math.Abs("/Webforms".ConcatWith(s).ToLower().GetHashCode());
     }
-  
+
 </script>
 
 <!DOCTYPE html>
