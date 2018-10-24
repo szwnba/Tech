@@ -109,12 +109,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\css\clearad.css" />
-    <Content Include="favicon.ico" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\images\banner.png" />
+    <Content Include="resources\images\banner.psd" />
+    <Content Include="resources\images\ooopic_1516204388.png" />
+    <Content Include="resources\images\TestLogo.jpg" />
+    <Content Include="resources\images\TestLogo.psd" />
     <Content Include="Webforms\Buttons\Overview\Default.aspx" />
     <Content Include="Webforms\Buttons\Test_Button\config.xml" />
     <Content Include="Webforms\Buttons\Test_Button\Default.aspx" />
@@ -141,7 +149,9 @@
     <Content Include="Webforms\Toolbar\Overview\config.xml" />
     <Content Include="Webforms\Toolbar\Overview\Default.aspx" />
     <Content Include="Webforms\Toolbar\Overview\images\saving.gif" />
-    <Content Include="Global.asax" />
+    <Content Include="Global.asax">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
     <Content Include="resources\fonts\LICENSE_TITILLIUMTEXT.txt" />
     <Content Include="resources\fonts\OpenSans-Italic-webfont.svg" />
@@ -184,6 +194,7 @@
     <Content Include="resources\images\welcome-bullet.png" />
     <Content Include="resources\images\welcome-screens.png" />
     <Content Include="resources\js\perfect-scrollbar.min.js" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -193,6 +204,7 @@
     <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\README.md" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
@@ -276,9 +288,10 @@
     <Content Include="resources\js\examples.js" />
     <Content Include="resources\images\new.gif" />
     <Content Include="resources\images\newgray.gif" />
-    <None Include="Web.sitemap">
+    <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Webforms\Buttons\Overview\arrow-down.gif" />
     <Content Include="Webforms\Buttons\Overview\config.xml" />
     <Content Include="Webforms\config.xml">

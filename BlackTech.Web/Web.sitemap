@@ -31,6 +31,6 @@
       <siteMapNode title="更换串号" description="No description" url="/Calendar/Remote_Data4/" />
     </siteMapNode>
   <siteMapNode title="图像处理" icon="fa fa-hand-pointer-o">
-    <siteMapNode title="Ifavicon在线制作" description="No description" url="/PhotoTool/Favicon/" />
+    <siteMapNode title="Ifavicon在线制作" description="NO description" url="/PhotoTool/Favicon/" />
   </siteMapNode>
 </siteMap>
