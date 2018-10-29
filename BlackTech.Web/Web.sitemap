@@ -1,41 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <siteMap>
    <siteMapNode title="项目计划" icon=" fa-wrench">
-           <siteMapNode title="TODO" description="No description" url="/Plan/TODO/" />
-    </siteMapNode>
+      <siteMapNode title="TODO" description="No description" url="/Plan/TODO/" />
+     <siteMapNode title="原则与导向" description="No description" url="/Plan/Principle/" />
+   </siteMapNode>
     <siteMapNode title="自媒体" icon=" fa-wrench">
-      <siteMapNode title="设计文档" description="No description" url="/Media/Document/" />
+      <siteMapNode title="流程设计" description="No description" url="/Media/Document/" />
       <siteMapNode title="热文检索" description="No description" url="/Media/Zeu2s/" />
       <siteMapNode title="智能洗稿" description="No description" url="/Media/Zeus/" />
       <siteMapNode title="图片文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
       <siteMapNode title="音频转文字" description="No description" url="/Media/" />
+      <siteMapNode title="外文翻译" description="No description" url="/ProjectTool/Redis2/" />
     </siteMapNode>
   <siteMapNode title="数据挖掘" icon=" fa fa-paint-brush">
-    <siteMapNode title="设计文档2" description="No description" url="/BigData/Document/" />
+    <siteMapNode title="流程设计" description="No description" url="/BigData/Document/" />
     <siteMapNode title="摄影工作室数据分析" description="No description" url="/BigData/SearchOrde1r/" />
     <siteMapNode title="深圳房价趋势" description="No description" url="/BigData/DBObjectGener2ate2/" />
     <siteMapNode title="黑科技营销产品" description="No description" url="/BigData/DBObjectGenerate2/" />
     <siteMapNode title="淘宝热门商品趋势" description="No description" url="/BigData/DBObjectGenerat3e/" />
   </siteMapNode>
+  <siteMapNode title="站长运营" icon="fa fa-info-circle">
+    <siteMapNode title="流程设计" description="No description" url="/WebMaster/Document/" />
+    <siteMapNode title="IP代理管理" description="No description" url="/WebMaster/Overview/" />
+      <siteMapNode title="邮件群发" description="No description" url="/WebMaster/Overview2/" />
+      <siteMapNode title="Whois查询" description="No description" url="/WebMaster/Overview3/" />
+  </siteMapNode>
+  <siteMapNode title="摄影工作室" icon="fa fa-calendar-o">
+    <siteMapNode title="流程设计" description="No description" url="/Photography/Document/" />
+  </siteMapNode>
+  <siteMapNode title="外贸电商" icon="fa fa-hand-pointer-o">
+    <siteMapNode title="流程设计" description="No description" url="/ECommerce/Document/" />
+    <siteMapNode title="淘宝热门商品趋势" description="No description" url="/ECommerce/DBObjectGenerat3e/" />
+    <siteMapNode title="英文单词纠正" description="No description" url="/ECommerce/Redis3/" />
+  </siteMapNode>
   <siteMapNode title="金融理财" icon="fa fa-paint-brush">
     <siteMapNode title="股票智能投顾" description="No description" url="/PhotoTool/Favico2n/" />
   </siteMapNode>
-  <siteMapNode title="站长运营" icon="fa fa-info-circle">
-      <siteMapNode title="IP代理管理" description="No description" url="/Getting_Started/Overview/" />
-      <siteMapNode title="邮件群发" description="No description" url="/Getting_Started/Overview1/" />
-      <siteMapNode title="Whois查询" description="No description" url="https://tool.lu/favicon//" />
+  <siteMapNode title="移动短信" icon="fa fa-calendar-o">
+    <siteMapNode title="短信接口" description="No description" url="/Calendar/Basic/" />
+    <siteMapNode title="群发短信" description="No description" url="/Calendar/Remote_Data2/" />
+    <siteMapNode title="虚拟定位" description="No description" url="/Calendar/Remote_Data3/" />
+    <siteMapNode title="更换串号" description="No description" url="/Calendar/Remote_Data4/" />
   </siteMapNode>
-    <siteMapNode title="移动短信" icon="fa fa-calendar-o">
-      <siteMapNode title="短信接口" description="No description" url="/Calendar/Basic/" />
-      <siteMapNode title="群发短信" description="No description" url="/Calendar/Remote_Data2/" />
-      <siteMapNode title="虚拟定位" description="No description" url="/Calendar/Remote_Data3/" />
-      <siteMapNode title="更换串号" description="No description" url="/Calendar/Remote_Data4/" />
-    </siteMapNode>
   <siteMapNode title="图像处理" icon="fa fa-hand-pointer-o">
     <siteMapNode title="Ifavicon在线制作" description="NO description" url="/PhotoTool/Favicon/" />
+    <siteMapNode title="图片压缩" description="NO description" url="/PhotoTool/PhotoCompress/" />
   </siteMapNode>
-    <siteMapNode title="外贸工具" icon="fa fa-hand-pointer-o">
-      <siteMapNode title="外文翻译" description="No description" url="/ProjectTool/Redis2/" />
-      <siteMapNode title="英文单词纠正" description="No description" url="/ProjectTool/Redis3/" />
-  </siteMapNode>
+
 </siteMap>

@@ -5,7 +5,7 @@
     {
         Ext.Net.Panel win = new Ext.Net.Panel()
           {
-              ID = "JobRun",
+              ID = "TODO",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -38,7 +38,7 @@
 <html>
 <head runat="server">
    
- <title>Job Running</title>
+ <title>TODO</title>
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    

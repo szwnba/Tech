@@ -95,18 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\UI\UIHelpers.cs" />
-    <Compile Include="Webforms\Calendar\Shared\Code\Data.cs" />
-    <Compile Include="Webforms\Calendar\Shared\Code\RemoteService.asmx.cs">
-      <DependentUpon>RemoteService.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx.cs">
-      <DependentUpon>EventsViewer.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx.designer.cs">
-      <DependentUpon>EventsViewer.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -123,32 +111,14 @@
     <Content Include="resources\images\ooopic_1516204388.png" />
     <Content Include="resources\images\TestLogo.jpg" />
     <Content Include="resources\images\TestLogo.psd" />
-    <Content Include="Webforms\Buttons\Overview\Default.aspx" />
-    <Content Include="Webforms\Buttons\Test_Button\config.xml" />
-    <Content Include="Webforms\Buttons\Test_Button\Default.aspx" />
-    <Content Include="Webforms\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
-    <Content Include="Webforms\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
-    <Content Include="Webforms\Getting_Started\Release_Documents\README\Default.aspx" />
-    <Content Include="Webforms\Buttons\Default_Button\config.xml" />
-    <Content Include="Webforms\Buttons\Default_Button\Default.aspx" />
-    <Content Include="Webforms\DBTool\SearchOrder\Default.aspx" />
-    <Content Include="Webforms\DBTool\DBObjectGenerate\Default.aspx" />
-    <Content Include="Webforms\Media\Notepad\Default.aspx" />
-    <Content Include="Webforms\Media\Notepad\todo.txt" />
+    <Content Include="Webforms\BigData\Document\Default.aspx" />
+    <Content Include="Webforms\ECommerce\Document\Default.aspx" />
+    <Content Include="Webforms\Media\Document\Default.aspx" />
+    <Content Include="Webforms\Photography\Document\Default.aspx" />
     <Content Include="Webforms\PhotoTool\Favicon\Default.aspx" />
-    <Content Include="Webforms\PhotoTool\Photoshop\Default.aspx" />
+    <Content Include="Webforms\PhotoTool\PhotoCompress\Default.aspx" />
+    <Content Include="Webforms\Plan\Principle\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
-    <Content Include="Webforms\Plan\TODO\todo.txt" />
-    <Content Include="Webforms\ProjectTool\Redis\Default.aspx" />
-    <Content Include="Webforms\ProjectTool\Zeus\Default.aspx" />
-    <Content Include="Webforms\Toolbar\config.xml" />
-    <Content Include="Webforms\Toolbar\Context_Menu\config.xml" />
-    <Content Include="Webforms\Toolbar\Context_Menu\Default.aspx" />
-    <Content Include="Webforms\Toolbar\Flat_Toolbar\config.xml" />
-    <Content Include="Webforms\Toolbar\Flat_Toolbar\Default.aspx" />
-    <Content Include="Webforms\Toolbar\Overview\config.xml" />
-    <Content Include="Webforms\Toolbar\Overview\Default.aspx" />
-    <Content Include="Webforms\Toolbar\Overview\images\saving.gif" />
     <Content Include="Global.asax">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -194,6 +164,7 @@
     <Content Include="resources\images\welcome-bullet.png" />
     <Content Include="resources\images\welcome-screens.png" />
     <Content Include="resources\js\perfect-scrollbar.min.js" />
+    <Content Include="Webforms\WebMaster\Document\Default.aspx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
@@ -283,8 +254,6 @@
     <Content Include="resources\images\ext_net_badge.gif" />
     <Content Include="resources\images\ext_net_logo_small.gif" />
     <Content Include="resources\js\main.js" />
-    <Content Include="Webforms\Buttons\Overview\thumbnail.gif" />
-    <Content Include="Webforms\Buttons\config.xml" />
     <Content Include="resources\js\examples.js" />
     <Content Include="resources\images\new.gif" />
     <Content Include="resources\images\newgray.gif" />
@@ -292,8 +261,6 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Webforms\Buttons\Overview\arrow-down.gif" />
-    <Content Include="Webforms\Buttons\Overview\config.xml" />
     <Content Include="Webforms\config.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -310,29 +277,8 @@
     <Content Include="resources\images\title-background.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Webforms\Calendar\config.xml" />
-    <Content Include="Webforms\Calendar\Basic\config.xml" />
-    <Content Include="Webforms\Calendar\Basic\Default.aspx" />
-    <Content Include="Webforms\Calendar\Remote_Data\config.xml" />
-    <Content Include="Webforms\Calendar\Shared\Code\RemoteService.asmx" />
-    <Content Include="Webforms\Calendar\Shared\Common\EventsViewer.ascx" />
-    <Content Include="Webforms\Calendar\Remote_Data\Default.aspx" />
-    <Content Include="Webforms\Calendar\Remote_Data\override.js" />
-    <Content Include="Webforms\Calendar\Shared\resources\css\main.css" />
-    <Content Include="Webforms\Calendar\Shared\resources\js\common.js" />
     <Content Include="404.aspx" />
     <Content Include="Code\UI\CommentsWindow.ascx" />
-    <Content Include="Webforms\Getting_Started\config.xml" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\add16.gif" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\add24.gif" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\add32.gif" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\config.xml" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\Default.aspx" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\overview.css" />
-    <Content Include="Webforms\Getting_Started\Component_Overview\themes.js" />
-    <Content Include="Webforms\Getting_Started\Overview\config.xml" />
-    <Content Include="Webforms\Getting_Started\Overview\Default.aspx" />
-    <Content Include="Webforms\Getting_Started\Overview\thumbnail.png" />
     <Content Include="resources\icons\calendar.png" />
     <Content Include="resources\icons\comments.png" />
     <Content Include="resources\icons\comment_add.png" />
@@ -342,8 +288,6 @@
     <Folder Include="conf\" />
     <Folder Include="Entity\" />
     <Folder Include="resources\xml\" />
-    <Folder Include="Webforms\Calendar\Shared\resources\images\" />
-    <Folder Include="Webforms\Getting_Started\Overview\images\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\BlackTech.Lib\Ext.Net.dll" />

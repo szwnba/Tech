@@ -6,8 +6,8 @@
         Ext.Net.Panel win = new Ext.Net.Panel()
           //Window win = new Window()
           {
-              ID = "icon",
-              //Title = "IconÖÆ×÷",
+              ID = "PhotoCompress",
+              //Title = "Í¼Æ¬Ñ¹Ëõ",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -19,7 +19,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://tool.lu/favicon/",
+                  Url = "https://tinypng.com",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
@@ -37,7 +37,7 @@
 
 <html>
 <head runat="server">
-    <title>IconÖÆ×÷</title>
+    <title>Í¼Æ¬Ñ¹Ëõ</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/resources/css/clearad.css" />
 </head>

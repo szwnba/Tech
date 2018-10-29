@@ -64,8 +64,8 @@
     {
         return Math.Abs("/Webforms".ConcatWith(s).ToLower().GetHashCode());
     }
-	
-   protected void btnHideStruct_DirectClick(object sender, DirectEventArgs e)
+
+       protected void btnHideStruct_DirectClick(object sender, DirectEventArgs e)
     {
         try
         {
@@ -85,7 +85,6 @@
             X.Msg.Alert("Message", ex.Message).Show();
         }
     }
-
 </script>
 
 <!DOCTYPE html>
@@ -97,9 +96,9 @@
 	 
  <script>
      Ext.onReady(function () {
-             var el = Ext.DomHelper.append(document.body, {
-                 id: "unlicensed"
-             }, true);
+         var el = Ext.DomHelper.append(document.body, {
+             id: "unlicensed"
+         }, true);
      });
  </script>
 
@@ -118,14 +117,14 @@
  
               <script>
 
-        // A workaround for the GitHub issue #915
-        Ext.data.TreeModel.override({
-            expand: function () {
-                if (this.data.visible) {
-                    this.callParent(arguments);
-                }
-            }
-        });
+                  // A workaround for the GitHub issue #915
+                  Ext.data.TreeModel.override({
+                      expand: function () {
+                          if (this.data.visible) {
+                              this.callParent(arguments);
+                          }
+                      }
+                  });
     </script>
   
 </head>
@@ -189,7 +188,7 @@
                                 <img src="resources/images/testlogo.png" />
                             </div>
                             <div class="navigation-bar">
-			        <div >
+                                    <div >
                                     <ext:Button
                                         Cls="platform-selector"
                                         runat="server"
@@ -252,7 +251,7 @@
                 </Content>
             </ext:Panel>
             <ext:Panel
-		ID="treePanel"
+                ID="treePanel"
                 runat="server"
                 Region="West"
                 Layout="Fit"
@@ -280,7 +279,7 @@
                                         runat="server"
                                         EnableKeyEvents="true"
                                         Flex="1"
-                                        EmptyText="법쫀꽉데..."
+                                        EmptyText="Filter..."
                                         RemoveClearTrigger="true">
                                         <Triggers>
                                             <ext:FieldTrigger Icon="Clear" Hidden="true" />
@@ -296,13 +295,13 @@
                                         <Menu>
                                             <ext:Menu runat="server" MinWidth="200">
                                                 <Items>
-                                                    <ext:MenuItem runat="server" Text="嵐역꽉데" IconCls="icon-expand-all">
+                                                    <ext:MenuItem runat="server" Text="Expand" IconCls="icon-expand-all">
                                                         <Listeners>
                                                             <Click Handler="#{exampleTree}.expandAll(false);" />
                                                         </Listeners>
                                                     </ext:MenuItem>
 
-                                                    <ext:MenuItem runat="server" Text="澗폅꽉데" IconCls="icon-collapse-all">
+                                                    <ext:MenuItem runat="server" Text="Collapse" IconCls="icon-collapse-all">
                                                         <Listeners>
                                                             <Click Handler="#{exampleTree}.collapseAll(false);" />
                                                         </Listeners>
@@ -386,7 +385,7 @@
                     <ext:Panel
                         ID="tabHome"
                         runat="server"
-                        Title="看女"
+                        Title="Home"
                         Height="100"
                         HideMode="Offsets"
                         IconCls="fa fa-home" >

@@ -4,10 +4,8 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         Ext.Net.Panel win = new Ext.Net.Panel()
-          //Window win = new Window()
           {
-              ID = "icon",
-              //Title = "Icon制作",
+              ID = "Principle",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -19,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://tool.lu/favicon/",
+                  Url = "https://mubu.com/edit/3gobE0jCFv",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
@@ -33,18 +31,28 @@
     }
 </script>
 
+
 <!DOCTYPE html>
+
 
 <html>
 <head runat="server">
-    <title>Icon制作</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/resources/css/clearad.css" />
-</head>
-<body>
-    <form runat="server">
-        <ext:ResourceManager runat="server" />
+   
+ <title>Principle</title>
     
+<link href="/resources/css/examples.css" rel="stylesheet" />
+   
+ <link rel="stylesheet" href="~/resources/css/clearad.css" />
+</head>
+
+<body>
+ 
+   <form runat="server">
+       
+ <ext:ResourceManager runat="server" />
+  
+  
     </form>
 </body>
+
 </html>
