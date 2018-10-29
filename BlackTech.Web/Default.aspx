@@ -11,6 +11,7 @@
 
 
     protected string mobileVersion = "4.1";
+    public static bool tempShow = true;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -62,6 +63,27 @@
     public static int GetHashCode(string s)
     {
         return Math.Abs("/Webforms".ConcatWith(s).ToLower().GetHashCode());
+    }
+	
+   protected void btnHideStruct_DirectClick(object sender, DirectEventArgs e)
+    {
+        try
+        {
+            if (tempShow)
+            {
+                tempShow = false;
+                treePanel.Width = 0;
+            }
+            else
+            {
+                tempShow = true;
+                treePanel.Width = 270;
+            }
+        }
+        catch (Exception ex)
+        {
+            X.Msg.Alert("Message", ex.Message).Show();
+        }
     }
 
 </script>
@@ -167,6 +189,16 @@
                                 <img src="resources/images/testlogo.png" />
                             </div>
                             <div class="navigation-bar">
+			        <div >
+                                    <ext:Button
+                                        Cls="platform-selector"
+                                        runat="server"
+                                        Width="20px"
+                                        Height="70px"
+                                        ArrowVisible="false"
+                                        OnDirectClick="btnHideStruct_DirectClick">
+                                    </ext:Button>
+                                </div>
                           <%--      <label id="menu-button" for="menu-button-checkbox">
                                     <span></span>
                                 </label>--%>
@@ -220,6 +252,7 @@
                 </Content>
             </ext:Panel>
             <ext:Panel
+		ID="treePanel"
                 runat="server"
                 Region="West"
                 Layout="Fit"
@@ -247,7 +280,7 @@
                                         runat="server"
                                         EnableKeyEvents="true"
                                         Flex="1"
-                                        EmptyText="过滤菜单..."
+                                        EmptyText="氩曥珋杲夒嵃..."
                                         RemoveClearTrigger="true">
                                         <Triggers>
                                             <ext:FieldTrigger Icon="Clear" Hidden="true" />
@@ -263,13 +296,13 @@
                                         <Menu>
                                             <ext:Menu runat="server" MinWidth="200">
                                                 <Items>
-                                                    <ext:MenuItem runat="server" Text="展开菜单" IconCls="icon-expand-all">
+                                                    <ext:MenuItem runat="server" Text="宓愳棴杲夒嵃" IconCls="icon-expand-all">
                                                         <Listeners>
                                                             <Click Handler="#{exampleTree}.expandAll(false);" />
                                                         </Listeners>
                                                     </ext:MenuItem>
 
-                                                    <ext:MenuItem runat="server" Text="收起菜单" IconCls="icon-collapse-all">
+                                                    <ext:MenuItem runat="server" Text="婢楉弲杲夒嵃" IconCls="icon-collapse-all">
                                                         <Listeners>
                                                             <Click Handler="#{exampleTree}.collapseAll(false);" />
                                                         </Listeners>
@@ -353,7 +386,7 @@
                     <ext:Panel
                         ID="tabHome"
                         runat="server"
-                        Title="首页"
+                        Title="鐪嬪コ"
                         Height="100"
                         HideMode="Offsets"
                         IconCls="fa fa-home" >
