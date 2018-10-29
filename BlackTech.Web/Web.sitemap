@@ -7,7 +7,6 @@
       <siteMapNode title="热文检索" description="No description" url="/ProjectTool/Zeu2s/" />
       <siteMapNode title="智能洗稿" description="No description" url="/ProjectTool/Zeus/" />
       <siteMapNode title="图片文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
-      <siteMapNode title="外文翻译" description="No description" url="/ProjectTool/Redis2/" />
       <siteMapNode title="音频转文字" description="No description" url="/ProjectTool/" />
     </siteMapNode>
   <siteMapNode title="数据挖掘" icon=" fa fa-paint-brush">
@@ -32,5 +31,9 @@
     </siteMapNode>
   <siteMapNode title="图像处理" icon="fa fa-hand-pointer-o">
     <siteMapNode title="Ifavicon在线制作" description="NO description" url="/PhotoTool/Favicon/" />
+  </siteMapNode>
+    <siteMapNode title="外贸工具" icon="fa fa-hand-pointer-o">
+      <siteMapNode title="外文翻译" description="No description" url="/ProjectTool/Redis2/" />
+      <siteMapNode title="英文单词纠正" description="No description" url="/ProjectTool/Redis3/" />
   </siteMapNode>
 </siteMap>
