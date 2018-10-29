@@ -4,16 +4,18 @@
            <siteMapNode title="TODO" description="No description" url="/Plan/TODO/" />
     </siteMapNode>
     <siteMapNode title="自媒体" icon=" fa-wrench">
-      <siteMapNode title="热文检索" description="No description" url="/ProjectTool/Zeu2s/" />
-      <siteMapNode title="智能洗稿" description="No description" url="/ProjectTool/Zeus/" />
+      <siteMapNode title="设计文档" description="No description" url="/Media/Document/" />
+      <siteMapNode title="热文检索" description="No description" url="/Media/Zeu2s/" />
+      <siteMapNode title="智能洗稿" description="No description" url="/Media/Zeus/" />
       <siteMapNode title="图片文字识别" description="No description" url="http://ai.baidu.com/tech/ocr/general" />
-      <siteMapNode title="音频转文字" description="No description" url="/ProjectTool/" />
+      <siteMapNode title="音频转文字" description="No description" url="/Media/" />
     </siteMapNode>
   <siteMapNode title="数据挖掘" icon=" fa fa-paint-brush">
-    <siteMapNode title="摄影工作室数据分析" description="No description" url="/DBTool/SearchOrde1r/" />
-    <siteMapNode title="深圳房价趋势" description="No description" url="/DBTool/DBObjectGener2ate2/" />
-    <siteMapNode title="黑科技营销产品" description="No description" url="/DBTool/DBObjectGenerate2/" />
-    <siteMapNode title="淘宝热门商品趋势" description="No description" url="/DBTool/DBObjectGenerat3e/" />
+    <siteMapNode title="设计文档2" description="No description" url="/BigData/Document/" />
+    <siteMapNode title="摄影工作室数据分析" description="No description" url="/BigData/SearchOrde1r/" />
+    <siteMapNode title="深圳房价趋势" description="No description" url="/BigData/DBObjectGener2ate2/" />
+    <siteMapNode title="黑科技营销产品" description="No description" url="/BigData/DBObjectGenerate2/" />
+    <siteMapNode title="淘宝热门商品趋势" description="No description" url="/BigData/DBObjectGenerat3e/" />
   </siteMapNode>
   <siteMapNode title="金融理财" icon="fa fa-paint-brush">
     <siteMapNode title="股票智能投顾" description="No description" url="/PhotoTool/Favico2n/" />
