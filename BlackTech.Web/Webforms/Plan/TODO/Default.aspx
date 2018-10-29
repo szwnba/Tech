@@ -18,7 +18,6 @@
               Loader = new ComponentLoader
               {
                   Url = "https://mubu.com/edit/2c1PKjqshv",
-                  //Url = "http://10.2.59.234/corp-user-automaticopencardjob/JobWS_Test.aspx/",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
