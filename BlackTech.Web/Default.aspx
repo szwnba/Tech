@@ -295,6 +295,15 @@
                                         <Menu>
                                             <ext:Menu runat="server" MinWidth="200">
                                                 <Items>
+						    <ext:MenuItem runat="server" Text="Direct Link" Icon="WeatherClouds">
+                                                        <Listeners>
+                                                                <Click Handler="
+                                                                    var path =window.location.href;
+                                                                    var newpath=path.replace('#','Webforms');
+                                                                    window.open(newpath, '_blank');" />
+                                                        </Listeners>
+                                                    </ext:MenuItem>
+							
                                                     <ext:MenuItem runat="server" Text="Expand" IconCls="icon-expand-all">
                                                         <Listeners>
                                                             <Click Handler="#{exampleTree}.expandAll(false);" />
