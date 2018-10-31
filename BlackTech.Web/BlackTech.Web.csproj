@@ -115,6 +115,7 @@
     <Content Include="Webforms\ECommerce\Document\Default.aspx" />
     <Content Include="Webforms\Media\Document\Default.aspx" />
     <Content Include="Webforms\Photography\Document\Default.aspx" />
+    <Content Include="Webforms\Photography\PS\Default.aspx" />
     <Content Include="Webforms\PhotoTool\Favicon\Default.aspx" />
     <Content Include="Webforms\PhotoTool\PhotoCompress\Default.aspx" />
     <Content Include="Webforms\Plan\Principle\Default.aspx" />
