@@ -27,6 +27,7 @@
   </siteMapNode>
   <siteMapNode title="摄影工作室" icon="fa fa-calendar-o">
     <siteMapNode title="流程设计" description="No description" url="/Photography/Document/" />
+     <siteMapNode title="摄影后期" description="No description" url="/Photography/PS/" />
   </siteMapNode>
   <siteMapNode title="外贸电商" icon="fa fa-hand-pointer-o">
     <siteMapNode title="流程设计" description="No description" url="/ECommerce/Document/" />
