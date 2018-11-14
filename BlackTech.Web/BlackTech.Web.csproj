@@ -115,7 +115,6 @@
     <Content Include="Webforms\BigData\Mtbaby\Default.aspx" />
     <Content Include="Webforms\Media\Document\Default.aspx" />
     <Content Include="Webforms\Photography\Document\Default.aspx" />
-    <Content Include="Webforms\Photography\PS\Default.aspx" />
     <Content Include="Webforms\Plan\Principle\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
     <Content Include="Global.asax">
