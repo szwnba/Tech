@@ -14,45 +14,10 @@
 <html>
 <head runat="server">
     <title></title>
- <%--   <script>
-        var clearFields = function () {
-            Ext.Msg.notify("Info.", "I'm here...");
-        }
-    </script>--%>
         <link rel="stylesheet" href="~/resources/css/clearad.css" />
-
-    <script>
-        //var ADDD = (function () {
-        //    var el = Ext.DomHelper.append(document.body, {
-        //        id: "unlicensed2"
-        //    }, true);
-
-            //var el = Ext.DomHelper.append(document.body, {
-            //    id: "unlicensed"
-            //}, false);
-            //$('#unlicensed').remove();
-            //Ext.select('unlicensed').remove();
-        //});
- </script>
-   <%-- <script>
-        $(document).ready(function () {
-            $('#unlicensed').remove();
-        });
-    </script>--%>
+        <link rel="stylesheet" href="<%= "../resources/css/main.css?" + Corp.Tool.Web.ExtNetVersion.Full %>" />
 
 <%--    <script>
-        Ext.onReady(function () {
-            var el = Ext.DomHelper.append(document.body, {
-                id: "unlicensed"
-            }, true);
-        });
- </script>--%>
-
-   
-
-    <link rel="stylesheet" href="<%= "../resources/css/main.css?" + Corp.Tool.Web.ExtNetVersion.Full %>" />
-
-    <script>
         Ext.onReady(function () {
             if (top !== self) {
                 Ext.select("a", true).on("click", function (e, el) {
@@ -62,7 +27,7 @@
                 }, null, { preventDefault: true });
             }
         });
-    </script>
+    </script>--%>
 
 </head>
 <body class="welcome">
@@ -86,7 +51,9 @@
                 <br />
                 <h3>其它常用网站连接</h3>
                 <ul class="popular-links">
-                     <li><a href="https://studio.dev.tencent.com/ws/wdurlu">Cloud Studio</a></li>
+                     <li><a href="http://35.192.122.198:3000/">Huginn</a></li>
+                    <li><a href="https://shu.taobao.com">阿里指数</a></li>
+                    <li><a href="https://studio.dev.tencent.com/ws/wdurlu">Cloud Studio</a></li>
                     <li><a href="https://uzer.me/">云端超级应用空间</a></li>
                 </ul>
 

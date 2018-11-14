@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://mubu.com/edit/3gobE0jCFv",
+                  Url = "https://www.yuque.com/szwnba/qyn2ev/vouby2",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {

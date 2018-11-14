@@ -5,7 +5,7 @@
     {
         Ext.Net.Panel win = new Ext.Net.Panel()
           {
-              ID = "PS",
+              ID = "Mtbaby",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://mubu.com/edit/2Lh5eLIZJv",
+                  Url = "https://tongji.baidu.com/web/homepage/index",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
@@ -38,7 +38,7 @@
 <html>
 <head runat="server">
    
- <title>PS</title>
+ <title>Mtbaby</title>
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    
