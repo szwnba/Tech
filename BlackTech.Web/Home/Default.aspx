@@ -51,8 +51,6 @@
                 <br />
                 <h3>其它常用网站连接</h3>
                 <ul class="popular-links">
-                     <li><a href="http://35.192.122.198:3000/">Huginn</a></li>
-                    <li><a href="https://shu.taobao.com">阿里指数</a></li>
                     <li><a href="https://studio.dev.tencent.com/ws/wdurlu">Cloud Studio</a></li>
                     <li><a href="https://uzer.me/">云端超级应用空间</a></li>
                 </ul>

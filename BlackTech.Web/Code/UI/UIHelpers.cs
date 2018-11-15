@@ -132,6 +132,11 @@ namespace Corp.Tool.Web
                     childNode.NodeID = "e" + Math.Abs(url.ToLower().GetHashCode());
                     childNode.CustomAttributes.Add(new ConfigItem("url", url));
                     childNode.Leaf = true;
+
+                    //增加href属性
+                    if (!string.IsNullOrEmpty(grandsonElement.GetAttribute("href")))
+                        childNode.Href = grandsonElement.GetAttribute("href");
+
                     node.Children.Add(childNode);
                 }
 

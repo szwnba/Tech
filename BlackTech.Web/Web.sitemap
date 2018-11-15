@@ -7,7 +7,13 @@
  
   <siteMapNode title="数据挖掘" icon=" fa fa-paint-brush">
     <siteMapNode title="麦田百度统计" description="No description" url="/BigData/Mtbaby/" />
+    <siteMapNode title="Huginn" description="No description" href="http://35.192.122.198:3000" url="http://35.192.122.198:3000" />
     <siteMapNode title="百度指数" description="No description" url="/BigData/Baidu/" />
+    <siteMapNode title="阿里指数" description="No description" href="https://shu.taobao.com" url="阿里指数" />
+  </siteMapNode>
+  <siteMapNode title="云端开发" icon=" fa fa-hand-pointer-o">
+    <siteMapNode title="Cloud Studio" description="No description" href="https://studio.dev.tencent.com/ws/wdurlu" url="CloudStudio" />
+    <siteMapNode title="云端超级应用空间" description="No description" href="https://uzer.me" url="云端超级应用空间" />
   </siteMapNode>
   <siteMapNode title="Document" icon="fa fa-info-circle">
     <siteMapNode title="站长运营Doc" description="No description" url="/WebMaster/Document/" />

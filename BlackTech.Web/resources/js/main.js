@@ -347,7 +347,12 @@ var onTreeAfterRender = function (tree) {
 var onTreeItemClick = function (record, e) {
     if (record.isLeaf()) {
         e.stopEvent();
-        loadExample(record.get('url'), record.getId(), record.get('text'));
+        if (record.get('href') != "") {
+            window.open(record.get('href'));
+        }
+        else {
+            loadExample(record.get('url'), record.getId(), record.get('text'));
+        }
     } else {
         record[record.isExpanded() ? 'collapse' : 'expand']();
     }

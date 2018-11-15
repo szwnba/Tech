@@ -35,13 +35,13 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\Super.Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\BlackTech.Lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp">
-      <HintPath>..\Super.Lib\itextsharp.dll</HintPath>
+      <HintPath>..\BlackTech.Lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Maticsoft.DBUtility">
-      <HintPath>..\Super.Lib\Maticsoft.DBUtility.dll</HintPath>
+      <HintPath>..\BlackTech.Lib\Maticsoft.DBUtility.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.JScript" />
     <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
@@ -49,14 +49,14 @@
       <HintPath>..\BlackTech.Lib\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="OWC10Chart">
-      <HintPath>..\Super.Lib\OWC10Chart.dll</HintPath>
+      <HintPath>..\BlackTech.Lib\OWC10Chart.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\Super.Lib\System.Data.SQLite.DLL</HintPath>
+      <HintPath>..\BlackTech.Lib\System.Data.SQLite.DLL</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
