@@ -57,15 +57,18 @@
     <Reference Include="Ext.Net, Version=4.5.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Ext.Net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Ext.Net.Utilities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -113,8 +116,6 @@
     <Content Include="resources\images\TestLogo.psd" />
     <Content Include="Webforms\BigData\Baidu\Default.aspx" />
     <Content Include="Webforms\BigData\Mtbaby\Default.aspx" />
-    <Content Include="Webforms\Media\Document\Default.aspx" />
-    <Content Include="Webforms\Photography\Document\Default.aspx" />
     <Content Include="Webforms\Plan\Principle\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
     <Content Include="Global.asax">
@@ -162,7 +163,6 @@
     <Content Include="resources\images\welcome-bullet.png" />
     <Content Include="resources\images\welcome-screens.png" />
     <Content Include="resources\js\perfect-scrollbar.min.js" />
-    <Content Include="Webforms\WebMaster\Document\Default.aspx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />

@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://tongji.baidu.com/web/homepage/index",
+                  Url = "http://tongji.baidu.com/web/welcome/ico?s=c69fc13b2ddc4d9402f9539daadd42ed",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {

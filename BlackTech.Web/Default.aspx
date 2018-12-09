@@ -37,7 +37,7 @@
         }
 
 
-        //this.exampleTree.ExpandAll();
+        this.exampleTree.ExpandAll();
 
 
 
