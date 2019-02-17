@@ -42,7 +42,7 @@
                             <img src="../resources/images/banner.png">
                         </div>
                         <div class="notification-text" id="TestCL">
-                            <strong>BlackTech</strong>是一个在线辅助工具，集合一些日常的技术工具.
+                            <strong>Tech Tool</strong>是一个在线辅助工具，集合一些日常的技术工具.
                        
                         </div>
                     </div>
