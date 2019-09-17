@@ -22,7 +22,7 @@
         {
             this.ResourceManager1.DirectEventUrl = "/";
 
-            this.TriggerField1.Focus();
+            //this.TriggerField1.Focus();
 
             ResourceManager.RegisterControlResources<TagLabel>();
 
@@ -184,24 +184,25 @@
                 <Content>
                     <header class="site-header" role="banner">
                         <nav class="top-navigation">
-                            <div class="logo-container">
-                                <img src="resources/images/testlogo.png" />
-                            </div>
-                            <div class="navigation-bar">
-                                    <div >
+                               <div class="navigation-bar">
                                     <ext:Button
                                         Cls="platform-selector"
                                         runat="server"
-                                        Width="20px"
+                                        Width="120px"
+                                        Text="TechTool"
                                         Height="70px"
                                         ArrowVisible="false"
                                         OnDirectClick="btnHideStruct_DirectClick">
                                     </ext:Button>
-                                </div>
                           <%--      <label id="menu-button" for="menu-button-checkbox">
                                     <span></span>
-                                </label>--%>
+                                </label>
                             </div>
+                              <%--
+                            <div class="logo-container">
+                                <img src="resources/images/testlogo.png" />
+                            </div>
+                         --%>
                         </nav>
                     </header>
                 </Content>
@@ -290,6 +291,7 @@
                                             <SpecialKey Fn="filterSpecialKey" Delay="1" />
                                         </Listeners>
                                     </ext:TextField>
+
 
                                     <ext:Button runat="server" id="OptionsButton" IconCls="fa fa-cog" ToolTip="Options" ArrowVisible="false">
                                         <Menu>
