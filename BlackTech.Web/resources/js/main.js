@@ -189,7 +189,6 @@ var makeTab = function (id, url, title) {
 
     tab = App.ExampleTabs.add(new Ext.Panel({
         id: id,
-        /*
         tbar: [
             {
                 text: "Refresh",
@@ -252,7 +251,6 @@ var makeTab = function (id, url, title) {
                 }).show(null);
             }
         }],
-        */
         title: title,
         tabTip: tabTip,
         hideMode: "offsets",

@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://www.yuque.com/szwnba/qyn2ev/vouby2",
+                  Url = "https://note.wiz.cn/web",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {

@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://github.com/szwnba/TODO/blob/master/TODO_%E5%BC%80%E5%8F%91%E6%B5%81.md",
+                  Url = "https://github.com/szwnba/TODO/blob/master/README.md",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
