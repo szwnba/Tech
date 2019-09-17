@@ -40,9 +40,7 @@
    
  <title>Baidu</title>
     
-<link href="/resources/css/examples.css" rel="stylesheet" />
-   
- <link rel="stylesheet" href="~/resources/css/clearad.css" />
+<link href="/resources/css/examples.css" rel="stylesheet" />   
 </head>
 
 <body>

@@ -42,7 +42,7 @@
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    
- <link rel="stylesheet" href="~/resources/css/clearad.css" />
+
 </head>
 
 <body>
