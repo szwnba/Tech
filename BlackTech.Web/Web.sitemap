@@ -6,8 +6,10 @@
      <siteMapNode title="流程图" description="No description"  url="/Plan/Processon/" />
    </siteMapNode>
     <siteMapNode title="自媒体" icon=" fa fa-hand-pointer-o">
-    <siteMapNode title="智能写作" description="No description" url="/Plan/Processon/" />
-  </siteMapNode>
+    <siteMapNode title="智能写作" description="No description" url="/Plan/Processon2/" />
+      <siteMapNode title="135编辑器" description="No description" url="/Plan/Processon3/" />
+
+    </siteMapNode>
   <siteMapNode title="数据分析" icon=" fa fa-paint-brush">
     <siteMapNode title="Huginn" description="No description" href="http://35.188.200.23:3000/scenarios" url="Huginn" />
     <siteMapNode title="链家房价" description="No description" url="/BigData/lianjia/" />
