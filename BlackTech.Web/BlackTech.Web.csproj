@@ -105,6 +105,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Webforms\Article\135Edit\Defa3ult.aspx" />
+    <Content Include="Webforms\Article\135Edit\Default.aspx" />
+    <Content Include="Webforms\Article\chuangkit\Default.aspx" />
+    <Content Include="Webforms\Plan\TODO\Default.aspx" />
+    <Content Include="Webforms\SEO\chinaz\Default.aspx" />
     <Content Include="resources\css\clearad.css" />
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -114,12 +119,12 @@
     <Content Include="resources\images\ooopic_1516204388.png" />
     <Content Include="resources\images\TestLogo.jpg" />
     <Content Include="resources\images\TestLogo.psd" />
-    <Content Include="Webforms\BigData\Baidu\Default.aspx" />
+    <Content Include="Webforms\SEO\BaiduSource\Default.aspx" />
     <Content Include="Webforms\BigData\lianjia\Default.aspx" />
-    <Content Include="Webforms\BigData\Mtbaby\Default.aspx" />
-    <Content Include="Webforms\Plan\Principle\Default.aspx" />
+    <Content Include="Webforms\SEO\MtbabyCount\Default.aspx" />
+    <Content Include="Webforms\OnlineDev\uzerme\Default.aspx" />
+    <Content Include="Webforms\Plan\wiz\Default.aspx" />
     <Content Include="Webforms\Plan\Processon\Default.aspx" />
-    <Content Include="Webforms\Plan\TODO\Default.aspx" />
     <Content Include="Global.asax">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

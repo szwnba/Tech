@@ -104,7 +104,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Tech Tool</title>
+    <title>Geek Tool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="<%= "resources/css/main.css?" + ExtNetVersion.Full %>" />
@@ -189,7 +189,7 @@
                                         Cls="platform-selector"
                                         runat="server"
                                         Width="120px"
-                                        Text="TechTool"
+                                        Text="GeekTool"
                                         Height="70px"
                                         ArrowVisible="false"
                                         OnDirectClick="btnHideStruct_DirectClick">

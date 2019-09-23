@@ -5,7 +5,7 @@
     {
         Ext.Net.Panel win = new Ext.Net.Panel()
           {
-              ID = "Principle",
+              ID = "uzerme",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "https://note.wiz.cn/web",
+                  Url = "https://uzer.me",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
@@ -38,7 +38,7 @@
 <html>
 <head runat="server">
    
- <title>Principle</title>
+ <title>云端超级应用空间</title>
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    

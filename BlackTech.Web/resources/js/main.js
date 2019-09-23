@@ -315,13 +315,13 @@ var makeTab = function (id, url, title) {
 
     if (node) {
         expandAndSelect(node);
-        createTagItems(tab, node);
+       // createTagItems(tab, node);
     } else {
         App.exampleTree.on("load", function (node) {
             node = App.exampleTree.getStore().getNodeById(id);
             if (node) {
                 expandAndSelect(node);
-                createTagItems(tab, node);
+               // createTagItems(tab, node);
             }
         }, this, { delay: 10, single: true });
     }

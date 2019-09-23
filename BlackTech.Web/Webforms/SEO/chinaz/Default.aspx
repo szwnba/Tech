@@ -5,7 +5,7 @@
     {
         Ext.Net.Panel win = new Ext.Net.Panel()
           {
-              ID = "Baidu",
+              ID = "chinaz",
               //Width = Unit.Pixel(1500),
               Height = Unit.Pixel(800),
               Layout = "Fit",
@@ -17,7 +17,7 @@
               Hidden = true,
               Loader = new ComponentLoader
               {
-                  Url = "http://index.baidu.com/",
+                  Url = "http://tool.chinaz.com/",
                   Mode = LoadMode.Frame,
                   LoadMask =
                   {
@@ -38,9 +38,10 @@
 <html>
 <head runat="server">
    
- <title>Baidu</title>
+ <title>Õ¾³¤Ö®¼Ò</title>
     
-<link href="/resources/css/examples.css" rel="stylesheet" />   
+<link href="/resources/css/examples.css" rel="stylesheet" />
+   
 </head>
 
 <body>

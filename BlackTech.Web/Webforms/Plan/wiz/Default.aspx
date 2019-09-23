@@ -14,7 +14,7 @@
 <html>
 <head runat="server">
    
- <title>Git TODO</title>
+ <title>为知笔记</title>
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    
@@ -30,7 +30,7 @@
         <Content>
             <div class="container">
                 <ul class="popular-links">
-                    <li><a href="https://github.com/szwnba/TODO/blob/master/README.md" target="_blank">Git TODO</a></li>
+                    <li><a href="http://www.wiz.cn" target="_blank">为知笔记</a></li>
                 </ul>
 
             </div>
