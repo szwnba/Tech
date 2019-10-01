@@ -61,6 +61,8 @@
     <Compile Include="Utility\CorpConfigManager.cs" />
     <Compile Include="Utility\CorpLog.cs" />
     <Compile Include="Utility\DateTimeHelper.cs" />
+    <Compile Include="Utility\EnumerableExtensions.cs" />
+    <Compile Include="Utility\JsonUtility.cs" />
     <Compile Include="Utility\TypeTransferHelper.cs" />
     <Compile Include="Utility\XmlHelper.cs" />
   </ItemGroup>

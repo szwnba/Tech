@@ -54,6 +54,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ctrip.Automation.Framework">
+      <HintPath>..\BlackTech.Lib\Ctrip.Automation.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Ext.Net, Version=4.5.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Ext.Net.dll</HintPath>
@@ -65,6 +68,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\BlackTech.Lib\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Newtonsoft.Json.dll</HintPath>
@@ -95,9 +101,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlackTech.Lib\Transformer.NET.dll</HintPath>
     </Reference>
+    <Reference Include="Wilco.SyntaxHighlighter">
+      <HintPath>..\BlackTech.Lib\Wilco.SyntaxHighlighter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Snippet\SnippetDBHelper.cs" />
+    <Compile Include="Code\SOA\SOADBHelper.cs" />
+    <Compile Include="Code\SOA\SOAHelper.cs" />
     <Compile Include="Code\UI\UIHelpers.cs" />
+    <Compile Include="Code\Util\ExportHelper.cs" />
+    <Compile Include="Code\Util\FileHelper.cs" />
+    <Compile Include="Code\Util\GridHelper.cs" />
+    <Compile Include="Code\Util\HighLighterUtils.cs" />
+    <Compile Include="Code\Util\StringUtility.cs" />
+    <Compile Include="Entity\SinppetEntity.cs" />
+    <Compile Include="Entity\SOAEntity.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -108,6 +127,8 @@
     <Content Include="Webforms\Article\135Edit\Defa3ult.aspx" />
     <Content Include="Webforms\Article\135Edit\Default.aspx" />
     <Content Include="Webforms\Article\chuangkit\Default.aspx" />
+    <Content Include="Webforms\OnlineDev\cloudstudio\Default.aspx" />
+    <Content Include="Webforms\Plan\mubu\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
     <Content Include="Webforms\SEO\chinaz\Default.aspx" />
     <Content Include="resources\css\clearad.css" />
@@ -170,6 +191,10 @@
     <Content Include="resources\images\welcome-bullet.png" />
     <Content Include="resources\images\welcome-screens.png" />
     <Content Include="resources\js\perfect-scrollbar.min.js" />
+    <Content Include="Webforms\OnlineDev\SOA\Default.aspx" />
+    <Content Include="Webforms\Snippet\Python\Default.aspx" />
+    <Content Include="Webforms\Snippet\Java\Default.aspx" />
+    <Content Include="Webforms\Snippet\CSharp\Default.aspx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
@@ -291,7 +316,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="conf\" />
-    <Folder Include="Entity\" />
     <Folder Include="resources\xml\" />
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +323,16 @@
     <Analyzer Include="..\BlackTech.Lib\Ext.Net.Utilities.dll" />
     <Analyzer Include="..\BlackTech.Lib\Newtonsoft.Json.dll" />
     <Analyzer Include="..\BlackTech.Lib\Transformer.NET.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackTech.Framework\BlackTech.Framework.csproj">
+      <Project>{d2ba16e0-ea42-4c9d-9306-d42efb71b2ca}</Project>
+      <Name>BlackTech.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlackTech.Utility\BlackTech.Utility.csproj">
+      <Project>{a6f7495b-b929-4ce1-b81e-c61ba7f55aad}</Project>
+      <Name>BlackTech.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

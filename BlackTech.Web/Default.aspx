@@ -37,7 +37,7 @@
         }
 
 
-        this.exampleTree.ExpandAll();
+        //this.exampleTree.ExpandAll();
 
 
 
@@ -65,7 +65,7 @@
         return Math.Abs("/Webforms".ConcatWith(s).ToLower().GetHashCode());
     }
 
-       protected void btnHideStruct_DirectClick(object sender, DirectEventArgs e)
+    protected void btnHideStruct_DirectClick(object sender, DirectEventArgs e)
     {
         try
         {

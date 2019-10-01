@@ -2,6 +2,7 @@
 <siteMap>
    <siteMapNode title="项目规划" icon=" fa-wrench">
      <siteMapNode title="TODO" description="No description" url="/Plan/TODO"  />
+     <siteMapNode title="幕布" description="No description" url="/Plan/mubu/" />
      <siteMapNode title="为知笔记" description="No description" url="/Plan/wiz/" />
      <siteMapNode title="流程图" description="No description"  url="/Plan/Processon/" />
    </siteMapNode>
@@ -14,6 +15,8 @@
   <siteMapNode title="数据分析" icon=" fa fa-paint-brush">
     <siteMapNode title="Huginn" description="No description" href="http://94.191.84.79:3000/" url="Huginn" />
     <siteMapNode title="链家房价" description="No description" url="/BigData/lianjia/" />
+    <siteMapNode title="Python金融量化" description="No description" url="/BigData/lianjia2/" />
+
   </siteMapNode>
   <siteMapNode title="SEO工具" icon=" fa fa-hand-pointer-o">
     <siteMapNode title="百度麦麦统计" description="No description" url="/SEO/MtbabyCount/" />
@@ -21,6 +24,13 @@
     <siteMapNode title="站长之家" description="No description" url="/SEO/chinaz/" />
   </siteMapNode>
   <siteMapNode title="云端开发" icon=" fa fa-hand-pointer-o">
+    <siteMapNode title="SOA接口" description="No description" url="/OnlineDev/SOA/" />
     <siteMapNode title="云端超级应用空间" description="No description" url="/OnlineDev/uzerme/" />
+    <siteMapNode title="Cloud Studio" description="No description" url="/OnlineDev/coludstudio/" />
+  </siteMapNode>
+  <siteMapNode title="代码库" icon=" fa fa-hand-pointer-o">
+    <siteMapNode title="C#" description="No description" url="/Snippet/CSharp/" />
+    <siteMapNode title="Java" description="No description" url="/Snippet/Java/" />
+    <siteMapNode title="Python" description="No description" url="/Snippet/Python/" />
   </siteMapNode>
 </siteMap>
