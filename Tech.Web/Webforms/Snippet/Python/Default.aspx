@@ -80,8 +80,8 @@
 
     protected void btnAddSnippet_DirectClick(object sender, DirectEventArgs e)
     {
-        txtAddCataType.Text = "";
-        txtAddCasename.Text = "";
+        //txtAddCataType.Text = "";
+        //txtAddCasename.Text = "";
         txtAddRequest.Text = "";
         this.addWin.Show();
     }
@@ -113,7 +113,7 @@
             SnippetEntity.Language = "Python";
             SnippetEntity.CataType = txtAddCataType.Text;
             SnippetEntity.Casename = txtAddCasename.Text;
-            SnippetEntity.Remark = txtAddRequest.Text;
+            SnippetEntity.Remark = txtAddRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             int result = SnippetDBHelper.AddSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
             addWin.Hide();
@@ -136,7 +136,7 @@
             SnippetEntity.Language = "Python";
             SnippetEntity.CataType = txtEditCataType.Text;
             SnippetEntity.Casename = txtEditCasename.Text;
-            SnippetEntity.Remark = txtEditRequest.Text;
+            SnippetEntity.Remark = txtEditRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             SnippetDBHelper.UpdateSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
             editWin.Hide();
