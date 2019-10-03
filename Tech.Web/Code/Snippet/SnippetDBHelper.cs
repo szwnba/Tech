@@ -15,7 +15,7 @@ namespace Tech.Web.DB
 {
     public class SnippetDBHelper 
     {
-        public static string sConnection = "Server=47.98.172.161;Port=3306;Database=geekdb;UID=root;PWD=982128;";
+        public static string sConnection = System.Web.Configuration.WebConfigurationManager.AppSettings["TechDB"];
         Database db = new Database(sConnection);
 
         public static List<SnippetEntity> GetAllList(string language)
@@ -43,7 +43,6 @@ namespace Tech.Web.DB
             }
             catch (Exception ex)
             {
-                Log.Info("Catch exception when reading SnippetEntity table. Exception=" + ex.Message);
                 throw ex;
             }
             return list;
@@ -73,7 +72,6 @@ namespace Tech.Web.DB
             }
             catch (Exception ex)
             {
-                Log.Info("Catch exception when reading pinelineinfo table. Exception=" + ex.Message);
                 throw ex;
             }
             return item;
@@ -92,7 +90,6 @@ namespace Tech.Web.DB
             }
             catch (Exception ex)
             {
-                Log.Info("Catch exception when adding SnippetEntity table. Exception=" + ex.Message);
                 throw ex;
             }
             return result;
@@ -110,7 +107,6 @@ namespace Tech.Web.DB
             }
             catch (Exception ex)
             {
-                Log.Info("Catch exception when update pinelineinfo table. Exception=" + ex.Message);
                 throw ex;
             }
             return result;

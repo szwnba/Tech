@@ -113,7 +113,7 @@
             SnippetEntity.Language = "C#";
             SnippetEntity.CataType = txtAddCataType.Text;
             SnippetEntity.Casename = txtAddCasename.Text;
-            SnippetEntity.Remark = txtAddRequest.Text;
+            SnippetEntity.Remark = txtAddRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             int result = SnippetDBHelper.AddSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
             addWin.Hide();
@@ -136,7 +136,7 @@
             SnippetEntity.Language = "C#";
             SnippetEntity.CataType = txtEditCataType.Text;
             SnippetEntity.Casename = txtEditCasename.Text;
-            SnippetEntity.Remark = txtEditRequest.Text;
+            SnippetEntity.Remark = txtEditRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             SnippetDBHelper.UpdateSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
             editWin.Hide();

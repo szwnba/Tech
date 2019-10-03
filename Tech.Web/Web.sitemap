@@ -32,5 +32,7 @@
     <siteMapNode title="C#" description="No description" url="/Snippet/CSharp/" />
     <siteMapNode title="Java" description="No description" url="/Snippet/Java/" />
     <siteMapNode title="Python" description="No description" url="/Snippet/Python/" />
+    <siteMapNode title="Other" description="No description" url="/Snippet/Other/" />
+
   </siteMapNode>
 </siteMap>

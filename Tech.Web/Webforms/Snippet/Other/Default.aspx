@@ -5,9 +5,9 @@
 <%@ Import Namespace="Tech.Web" %>
 <%@ Import Namespace="Tech.Web.Common" %>
 <%@ Import Namespace="Tech.Web.Util" %>
+<%@ Import Namespace="Tech.Entity.SnippetEntity" %>
 <%@ Import Namespace="Tech.Web.DB" %>
 <%@ Import Namespace="Tech.Framework.Utility" %>
-<%@ Import Namespace="Tech.Entity.SnippetEntity" %>
 
 <script runat="server">
 
@@ -20,7 +20,7 @@
         if (!X.IsAjaxRequest)
         {
             //加载QMQ分类
-            qmqList = SnippetDBHelper.GetAllList("Java").DistinctBy(x => x.CataType).ToList();
+            qmqList = SnippetDBHelper.GetAllList("Other").DistinctBy(x => x.CataType).ToList();
             object[] SnippetData2 = new object[qmqList.Count];
             for (int i = 0; i < qmqList.Count; i++)
             {
@@ -38,7 +38,7 @@
         try
         {
             txtLogs.Text = "";
-            List<SnippetEntity> selectCaseList = SnippetDBHelper.GetAllList("Java").Where(x => x.CataType == this.cmbSnippet.SelectedItem.Text).ToList(); ;
+            List<SnippetEntity> selectCaseList = SnippetDBHelper.GetAllList("Other").Where(x => x.CataType == this.cmbSnippet.SelectedItem.Text).ToList(); ;
             this.storeTestCase.DataSource = selectCaseList;
             this.storeTestCase.DataBind();
             this.cmbTestCase.SelectedItem.Text = selectCaseList[0].Casename;
@@ -58,7 +58,7 @@
         {
             //Load Request
             string request = this.cmbTestCase.SelectedItem.Value;
-            List<SnippetEntity> selectCaseList = SnippetDBHelper.GetAllList("Java").Where(x => x.CataType == this.cmbSnippet.SelectedItem.Text
+            List<SnippetEntity> selectCaseList = SnippetDBHelper.GetAllList("Other").Where(x => x.CataType == this.cmbSnippet.SelectedItem.Text
                 && x.Casename == this.cmbTestCase.SelectedItem.Text).ToList();
             if (selectCaseList != null && selectCaseList.Count > 0)
             {
@@ -80,8 +80,8 @@
 
     protected void btnAddSnippet_DirectClick(object sender, DirectEventArgs e)
     {
-        txtAddCataType.Text = "";
-        txtAddCasename.Text = "";
+        //txtAddCataType.Text = "";
+        //txtAddCasename.Text = "";
         txtAddRequest.Text = "";
         this.addWin.Show();
     }
@@ -89,7 +89,7 @@
     protected void btnEditSnippet_DirectClick(object sender, DirectEventArgs e)
     {
         this.editWin.Show();
-        SnippetEntity SnippetEntity = SnippetDBHelper.GetSnippetByID("Java", this.cmbSnippet.SelectedItem.Text, this.cmbTestCase.SelectedItem.Text);
+        SnippetEntity SnippetEntity = SnippetDBHelper.GetSnippetByID("Other", this.cmbSnippet.SelectedItem.Text, this.cmbTestCase.SelectedItem.Text);
         if (SnippetEntity != null)
         {
             this.txtEditID.Text = SnippetEntity.Id.ToString();
@@ -110,13 +110,14 @@
         {
             //Add
             SnippetEntity SnippetEntity = new SnippetEntity();
-            SnippetEntity.Language = "Java";
+            SnippetEntity.Language = "Other";
             SnippetEntity.CataType = txtAddCataType.Text;
             SnippetEntity.Casename = txtAddCasename.Text;
             SnippetEntity.Remark = txtAddRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             int result = SnippetDBHelper.AddSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
             addWin.Hide();
+            //if (result == 1) Refresh();
 
         }
         catch (Exception ex)
@@ -132,7 +133,7 @@
         {
             SnippetEntity SnippetEntity = new SnippetEntity();
             SnippetEntity.Id = Convert.ToInt32(txtEditID.Text);
-            SnippetEntity.Language = "Java";
+            SnippetEntity.Language = "Other";
             SnippetEntity.CataType = txtEditCataType.Text;
             SnippetEntity.Casename = txtEditCasename.Text;
             SnippetEntity.Remark = txtEditRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
