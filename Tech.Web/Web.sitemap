@@ -1,22 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <siteMap>
-   <siteMapNode title="项目规划" icon=" fa-wrench">
-     <siteMapNode title="TODO" description="No description" url="/Plan/TODO"  />
-     <siteMapNode title="幕布" description="No description" url="/Plan/mubu/" />
-     <siteMapNode title="为知笔记" description="No description" url="/Plan/wiz/" />
-     <siteMapNode title="流程图" description="No description"  url="/Plan/Processon/" />
-   </siteMapNode>
-    <siteMapNode title="自媒体" icon=" fa fa-hand-pointer-o">
+  <siteMapNode title="项目规划" icon=" fa-wrench">
+    <siteMapNode title="TODO" description="No description" url="/Plan/TODO"  />
+    <siteMapNode title="幕布" description="No description" url="/Plan/mubu/" />
+    <siteMapNode title="为知笔记" description="No description" url="/Plan/wiz/" />
+    <siteMapNode title="流程图" description="No description"  url="/Plan/Processon/" />
+  </siteMapNode>
+  <siteMapNode title="自媒体" icon=" fa fa-hand-pointer-o">
     <siteMapNode title="智能写作" description="No description" url="/Article/Processon2/" />
     <siteMapNode title="创客贴" description="No description" url="/Article/chuangkit/" />
     <siteMapNode title="135编辑器" description="No description" url="/Article/135Edit/" />
-
-    </siteMapNode>
+  </siteMapNode>
   <siteMapNode title="数据分析" icon=" fa fa-paint-brush">
     <siteMapNode title="Huginn" description="No description" href="http://94.191.84.79:3000/" url="Huginn" />
     <siteMapNode title="链家房价" description="No description" url="/BigData/lianjia/" />
     <siteMapNode title="Python金融量化" description="No description" url="/BigData/lianjia2/" />
-
+  </siteMapNode>
+  <siteMapNode title="数据库分析" icon=" fa fa-paint-brush">
+    <siteMapNode title="查询维度" description="No description" url="/DBTool/DBSQLGen/" />
+    <siteMapNode title="查询数据库" description="No description"  url="/DBTool/DBSearch/" />
   </siteMapNode>
   <siteMapNode title="SEO工具" icon=" fa fa-hand-pointer-o">
     <siteMapNode title="百度麦麦统计" description="No description" url="/SEO/MtbabyCount/" />
@@ -36,6 +38,5 @@
     <siteMapNode title="Java" description="No description" url="/Snippet/Java/" />
     <siteMapNode title="Python" description="No description" url="/Snippet/Python/" />
     <siteMapNode title="Other" description="No description" url="/Snippet/Other/" />
-
   </siteMapNode>
 </siteMap>

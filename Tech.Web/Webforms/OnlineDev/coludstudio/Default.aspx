@@ -14,7 +14,7 @@
 <html>
 <head runat="server">
    
- <title>Cloud Studio</title>
+ <title>Cloud studio</title>
     
 <link href="/resources/css/examples.css" rel="stylesheet" />
    
@@ -30,7 +30,7 @@
         <Content>
             <div class="container">
                 <ul class="popular-links">
-                    <li><a href="https://studio.dev.tencent.com/ws/wdurlu" target="_blank">Git TODO</a></li>
+                    <li><a href="https://studio.dev.tencent.com/dashboard/workspace" target="_blank">Cloud studio</a></li>
                 </ul>
 
             </div>

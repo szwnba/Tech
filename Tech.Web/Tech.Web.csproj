@@ -106,6 +106,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\DBTool\MysqlDBHelper.cs" />
+    <Compile Include="Code\DBTool\DBSQLGenHelper.cs" />
     <Compile Include="Code\Snippet\SnippetDBHelper.cs" />
     <Compile Include="Code\SOA\SOADBHelper.cs" />
     <Compile Include="Code\SOA\SOAHelper.cs" />
@@ -115,6 +117,7 @@
     <Compile Include="Code\Util\GridHelper.cs" />
     <Compile Include="Code\Util\HighLighterUtils.cs" />
     <Compile Include="Code\Util\StringUtility.cs" />
+    <Compile Include="Entity\DBSQLGenEntity.cs" />
     <Compile Include="Entity\SinppetEntity.cs" />
     <Compile Include="Entity\SOAEntity.cs" />
     <Compile Include="Global.asax.cs">
@@ -127,7 +130,9 @@
     <Content Include="Webforms\Article\135Edit\Defa3ult.aspx" />
     <Content Include="Webforms\Article\135Edit\Default.aspx" />
     <Content Include="Webforms\Article\chuangkit\Default.aspx" />
-    <Content Include="Webforms\OnlineDev\cloudstudio\Default.aspx" />
+    <Content Include="Webforms\DBTool\DBSQLGen\Default.aspx" />
+    <Content Include="Webforms\DBTool\DBSearch\Default.aspx" />
+    <Content Include="Webforms\OnlineDev\coludstudio\Default.aspx" />
     <Content Include="Webforms\Plan\mubu\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
     <Content Include="Webforms\Plan\TODOBak\Default.aspx" />

@@ -2,41 +2,36 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using MySql.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using Tech.Entity.SOAEntity;
-using Tech.Framework.Utility;
+using Tech.Entity.DBSQLGenEntity;
 
 namespace Tech.Web.DB
 {
-    public class SOADBHelper
+    public class DBSQLGenHelper
     {
         public static string sConnection = System.Web.Configuration.WebConfigurationManager.AppSettings["TechDB"];
         Database db = new Database(sConnection);
 
-        public static List<SOAEntity> GetAllList(string type)
+        public static List<DBSQLGenEntity> GetAllList()
         {
-
-            List<SOAEntity> list = new List<SOAEntity>();
+            List<DBSQLGenEntity> list = new List<DBSQLGenEntity>();
             try
             {
                 StringBuilder sqlCommand = new StringBuilder();
-                sqlCommand.AppendFormat("select * from SOA where type = '{0}' ", type);
+                sqlCommand.Append("select * from dbsql ");
                 DataTable dataTable = MySqlHelper.ExecuteDataset(sConnection, sqlCommand.ToString()).Tables[0];
                 if (null != dataTable && dataTable.Rows.Count > 0)
                 {
                     foreach (DataRow row in dataTable.Rows)
                     {
-                        SOAEntity item = new SOAEntity();
+                        DBSQLGenEntity item = new DBSQLGenEntity();
                         item.Id = Convert.ToInt32(row["id"]);
                         item.Name = row["name"].ToString();
-                        item.Url = row["url"].ToString();
-                        item.Casename = row["casename"].ToString();
-                        item.Requesttype = row["requesttype"].ToString();
-                        item.Request = row["request"].ToString();
+                        item.SubName = row["subName"].ToString();
+                        item.DBName = row["dbname"].ToString();
+                        item.TableName = row["tablename"].ToString();
+                        item.SQLText = row["sqltext"].ToString();
                         item.Datetime = row["datetime"].ToString();
                         list.Add(item);
                     }
@@ -49,25 +44,24 @@ namespace Tech.Web.DB
             return list;
         }
 
-        public static SOAEntity GetSOAByID(string name, string url, string casename)
+        public static DBSQLGenEntity GetDBSQLByID(string name, string subName)
         {
-            //Database db = new Database(sConnection);
-            SOAEntity item = null;
+            DBSQLGenEntity item = null;
             try
             {
-                string sqlCommand = String.Format("select * from SOA where name ='{0}' and url ='{1}' and casename ='{2}' ", name, url, casename);
+                string sqlCommand = String.Format("select * from dbsql where name ='{0}' and subName ='{1}'", name, subName);
                 DataTable dataTable = MySqlHelper.ExecuteDataset(sConnection, sqlCommand).Tables[0];
                 if (null != dataTable && dataTable.Rows.Count > 0)
                 {
-                    item = new SOAEntity();
+                    item = new DBSQLGenEntity();
                     foreach (DataRow row in dataTable.Rows)
                     {
                         item.Id = Convert.ToInt32(row["id"]);
                         item.Name = row["name"].ToString();
-                        item.Url = row["url"].ToString();
-                        item.Casename = row["casename"].ToString();
-                        item.Requesttype = row["requesttype"].ToString();
-                        item.Request = row["request"].ToString();
+                        item.SubName = row["subName"].ToString();
+                        item.DBName = row["dbname"].ToString();
+                        item.TableName = row["tablename"].ToString();
+                        item.SQLText = row["sqltext"].ToString();
                         item.Datetime = row["datetime"].ToString();
                     }
                 }
@@ -80,14 +74,14 @@ namespace Tech.Web.DB
         }
 
 
-        public static int AddSOA(SOAEntity SOAEntity)
+        public static int AddDBSQLGen(DBSQLGenEntity DBSQLGenEntity)
         {
             int result = 0;
             try
             {
-                string sqlCommand = string.Format("insert into SOA (name,type, url,casename,requesttype,request,datetime) values ( '{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
-                    SOAEntity.Name, SOAEntity.Type,
-                    SOAEntity.Url, SOAEntity.Casename, SOAEntity.Requesttype, SOAEntity.Request, DateTime.Now);
+                string sqlCommand = string.Format("insert into dbsql (name,subName, dbname,tablename,sqltext, datetime) values ( '{0}','{1}','{2}','{3}','{4}','{5}')",
+                    DBSQLGenEntity.Name, DBSQLGenEntity.SubName,
+                    DBSQLGenEntity.DBName, DBSQLGenEntity.TableName, DBSQLGenEntity.SQLText, DateTime.Now);
                 result = MySqlHelper.ExecuteNonQuery(sConnection, sqlCommand);
             }
             catch (Exception ex)
@@ -97,14 +91,14 @@ namespace Tech.Web.DB
             return result;
         }
 
-        public static int UpdateSOA(SOAEntity SOAEntity)
+        public static int UpdateDBSQLGen(DBSQLGenEntity DBSQLGenEntity)
         {
             int result = 0;
             try
             {
-                string sqlCommand = string.Format("update SOA set name='{0}',type='{1}',url='{2}',casename='{3}',requesttype='{4}',request='{5}',datetime='{6}'where id = {7}",
-                    SOAEntity.Name, SOAEntity.Type,
-                    SOAEntity.Url, SOAEntity.Casename, SOAEntity.Requesttype, SOAEntity.Request, DateTime.Now, SOAEntity.Id);
+                string sqlCommand = string.Format("update dbsql set name='{0}',subName='{1}',dbname='{2}',tablename='{3}',sqltext='{4}', datetime='{5}' where id = {6}",
+                    DBSQLGenEntity.Name, DBSQLGenEntity.SubName,
+                   DBSQLGenEntity.DBName, DBSQLGenEntity.TableName, DBSQLGenEntity.SQLText, DateTime.Now, DBSQLGenEntity.Id);
                 result = MySqlHelper.ExecuteNonQuery(sConnection, sqlCommand);
             }
             catch (Exception ex)
