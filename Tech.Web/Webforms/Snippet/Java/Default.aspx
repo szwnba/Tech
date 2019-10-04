@@ -166,7 +166,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        <ext:Panel runat="server" Title="Snippet" Layout="HBoxLayout">
+        <ext:Panel runat="server"  Layout="HBoxLayout">
             <Items>
                 <ext:Panel
                     runat="server"

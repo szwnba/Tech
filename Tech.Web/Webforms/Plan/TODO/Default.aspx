@@ -34,7 +34,6 @@
             {
                 this.txtLogs.Text = selectCaseList[0].Remark;
             }
-
         }
         catch (Exception ex)
         {
@@ -42,59 +41,11 @@
         }
     }
 
-
     protected void clean_Click(object sender, DirectEventArgs e)
     {
         this.txtLogs.Clear();
     }
 
-    protected void btnAddSnippet_DirectClick(object sender, DirectEventArgs e)
-    {
-        //txtAddCataType.Text = "";
-        //txtAddCasename.Text = "";
-        txtAddRequest.Text = "";
-        this.addWin.Show();
-    }
-
-    protected void btnEditSnippet_DirectClick(object sender, DirectEventArgs e)
-    {
-        this.editWin.Show();
-        SnippetEntity SnippetEntity = SnippetDBHelper.GetSnippetByID("Todo", "Todo", "Todo");
-        if (SnippetEntity != null)
-        {
-            this.txtEditID.Text = SnippetEntity.Id.ToString();
-            this.txtEditCataType.Text = SnippetEntity.CataType;
-            this.txtEditCasename.Text = SnippetEntity.Casename;
-            this.txtEditRequest.Text = SnippetEntity.Remark;
-        }
-        else
-        {
-            X.Msg.Alert("Message", "DB没有找到对应数据").Show();
-        }
-    }
-
-    //add new pineline 
-    protected void btnSaveAddWin_DirectClick(object sender, EventArgs e)
-    {
-        try
-        {
-            //Add
-            SnippetEntity SnippetEntity = new SnippetEntity();
-            SnippetEntity.Language = "Todo";
-            SnippetEntity.CataType = "Todo";
-            SnippetEntity.Casename = "Todo";
-            SnippetEntity.Remark = txtAddRequest.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
-            int result = SnippetDBHelper.AddSnippet(SnippetEntity);
-            X.Msg.Alert("Message", "保存成功").Show();
-            addWin.Hide();
-            //if (result == 1) Refresh();
-
-        }
-        catch (Exception ex)
-        {
-            X.Msg.Alert("Message", ex.Message.ToString()).Show();
-        }
-    }
 
     //add new pineline 
     protected void btnSaveEditWin_DirectClick(object sender, EventArgs e)
@@ -109,8 +60,6 @@
             SnippetEntity.Remark = txtLogs.Text.Replace("\'", "\\'").Replace("\"", "\\\"");
             SnippetDBHelper.UpdateSnippet(SnippetEntity);
             X.Msg.Alert("Message", "保存成功").Show();
-            editWin.Hide();
-            //if (result == 1) Refresh();
         }
         catch (Exception ex)
         {
@@ -130,14 +79,13 @@
 
 <html>
 <head runat="server">
-    <title>Snippet Push</title>
+    <title>TODO </title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/resources/css/clearad2.css" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        <ext:Panel runat="server"  Layout="HBoxLayout">
+        <ext:Panel runat="server" Layout="HBoxLayout">
             <Items>
                 <ext:Panel
                     runat="server"
@@ -147,109 +95,21 @@
                     BodyPadding="5"
                     ButtonAlign="Right">
                     <Items>
-                        <ext:FieldSet
-                            ID="FieldBooking"
-                            runat="server"
-                            ColumnWidth="1"
-                            Title="Snippet"
-                            MarginSpec="0 0 0 10"
-                            ButtonAlign="Right">
-                            <Defaults>
-                                <ext:Parameter Name="LabelWidth" Value="40" />
-                            </Defaults>
-                            <Items>
-                               <ext:TextArea ID="txtLogs" runat="server" Width="1000" Height="640" />
-
-                              <%--  <ext:HtmlEditor
-                                    ID="txtLogs"
-                                    runat="server"
-                                    Height="540"
-                                    EnableAlignments="false" EnableFontSize="False" EnableFont="False" EnableFormat="False" EnableLinks="False" EnableLists="False" EnableSourceEdit="False" EscapeValue="False" EnableColors="False">
-                                </ext:HtmlEditor>--%>
-                            </Items>
-                        </ext:FieldSet>
-
+                        <ext:TextArea ID="txtLogs" runat="server" Width="1200" Height="640" />
                     </Items>
 
                     <Buttons>
-                      <%--  <ext:Button ID="btnAddSnippet" runat="server" Text="Add Snippet">
-                            <DirectEvents>
-                                <Click OnEvent="btnAddSnippet_DirectClick">
-                                    <EventMask ShowMask="true" Msg="正在处理..."></EventMask>
-                                </Click>
-                            </DirectEvents>
-                        </ext:Button>--%>
-                        <ext:Button ID="btnEditSnippet" runat="server" Text="Edit">
+                        <ext:Button ID="btnEditSnippet" runat="server"  Text="Save">
                             <DirectEvents>
                                 <Click OnEvent="btnSaveEditWin_DirectClick">
                                     <EventMask ShowMask="true" Msg="正在处理..."></EventMask>
                                 </Click>
                             </DirectEvents>
                         </ext:Button>
-
                     </Buttons>
                 </ext:Panel>
-
-
-
             </Items>
-
         </ext:Panel>
-
-        <ext:Window ID="addWin" runat="server" Title="Add Snippet Push" Icon="Application" Height="700" Width="600" Hidden="true" Modal="true">
-            <Items>
-                <ext:FieldSet
-                    runat="server"
-                    Title="Add Snippet ">
-                    <Defaults>
-                        <ext:Parameter Name="LabelWidth" Value="80" />
-                    </Defaults>
-                    <Items>
-                        <ext:TextField ID="txtAddCataType" runat="server" FieldLabel="分类" Width="500" />
-                        <ext:TextField ID="txtAddCasename" runat="server" FieldLabel="场景名称" Width="500" />
-                        <ext:TextArea ID="txtAddRequest" runat="server" FieldLabel="代码" Width="540" Height="400" />
-                    </Items>
-                </ext:FieldSet>
-            </Items>
-            <Buttons>
-                <ext:Button ID="btnAddSave" runat="server" Text="Save">
-                    <DirectEvents>
-                        <Click OnEvent="btnSaveAddWin_DirectClick">
-                            <EventMask ShowMask="true" Msg="正在处理..."></EventMask>
-                        </Click>
-                    </DirectEvents>
-                </ext:Button>
-            </Buttons>
-        </ext:Window>
-
-
-        <ext:Window ID="editWin" runat="server" Title="Edit Pineline" Icon="Application" Height="700" Width="600" Hidden="true" Modal="true">
-            <Items>
-                <ext:FieldSet
-                    runat="server"
-                    Title="Edit">
-                    <Defaults>
-                        <ext:Parameter Name="LabelWidth" Value="80" />
-                    </Defaults>
-                    <Items>
-                        <ext:TextField ID="txtEditID" runat="server" Disabled="true" FieldLabel="ID" Width="500" />
-                        <ext:TextField ID="txtEditCataType" runat="server" FieldLabel="分类" Width="500" />
-                        <ext:TextField ID="txtEditCasename" runat="server" FieldLabel="场景名称" Width="500" />
-                        <ext:TextArea ID="txtEditRequest" runat="server" FieldLabel="代码" Width="540" Height="400" />
-                    </Items>
-                </ext:FieldSet>
-            </Items>
-            <Buttons>
-                <ext:Button ID="btnEditSave" runat="server" Text="Save">
-                    <DirectEvents>
-                        <Click OnEvent="btnSaveEditWin_DirectClick">
-                            <EventMask ShowMask="true" Msg="正在处理..."></EventMask>
-                        </Click>
-                    </DirectEvents>
-                </ext:Button>
-            </Buttons>
-        </ext:Window>
-
     </form>
 </body>
 </html>

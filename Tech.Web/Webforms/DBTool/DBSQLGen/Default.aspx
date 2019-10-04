@@ -251,7 +251,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        <ext:Panel runat="server" Title="DBSQLGen" Layout="HBoxLayout">
+        <ext:Panel runat="server"  Layout="HBoxLayout">
             <Items>
                 <ext:Panel
                     runat="server"
@@ -265,7 +265,7 @@
                             ID="FieldBooking"
                             runat="server"
                             ColumnWidth="1"
-                            Title="DBSQLGen"
+                            Title="维度查询"
                             MarginSpec="0 0 0 10"
                             ButtonAlign="Right">
                             <Defaults>
@@ -278,7 +278,7 @@
                                     FieldLabel="分类"
                                     DisplayField="keytypename"
                                     ValueField="keytypenum"
-                                    Width="350"
+                                    Width="250"
                                     QueryMode="Local"
                                     TypeAhead="true"
                                     EmptyText="请选择一个分类">
@@ -313,7 +313,7 @@
                                     ValueField="Casename1"
                                     ForceSelection="true"
                                     TriggerAction="All"
-                                    Width="350"
+                                    Width="250"
                                     QueryMode="Local"
                                     TypeAhead="true"
                                     EmptyText="请选择一个场景">

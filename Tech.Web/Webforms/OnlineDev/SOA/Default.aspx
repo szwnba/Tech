@@ -230,7 +230,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        <ext:Panel runat="server" Title="SOA Push 接口" Layout="HBoxLayout">
+        <ext:Panel runat="server"  Layout="HBoxLayout">
             <Items>
                 <ext:Panel
                     runat="server"

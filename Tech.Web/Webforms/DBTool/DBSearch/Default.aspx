@@ -62,7 +62,7 @@
             DataTable table = null;
             string tablename = cmbMysqlTableList.SelectedItem.Value.ToString().Trim();
             string sql = txtSQL.Text;
-            table = MySqlDBHelper.GetTableDetailBySQL(sConnection,sql);
+            table = MySqlDBHelper.GetTableDetailBySQL(sConnection, sql);
             BindData(table, gpRPTData);
         }
         catch (Exception ex)
@@ -106,41 +106,34 @@
 <head runat="server">
     <title>Search Order</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/resources/css/clearad.css" />
     <script>
-
 </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-
         <ext:FormPanel
             runat="server"
-            Title="数据库查询"
-            BodyPadding="5"
+            BodyPadding="2"
             Layout="ColumnLayout">
-
             <FieldDefaults LabelAlign="Left" MsgTarget="Side" />
-
             <Items>
-
                 <ext:FieldSet
                     runat="server"
+                    Title="查询数据库"
                     ColumnWidth="1"
-                    Title=" "
                     ButtonAlign="Right">
                     <Defaults>
-                        <ext:Parameter Name="LabelWidth" Value="115" />
+                        <ext:Parameter Name="LabelWidth" Value="40" />
                     </Defaults>
                     <Items>
                         <ext:ComboBox
                             ID="cmbMysqlDBList"
                             runat="server"
-                            FieldLabel="DB 列表"
+                            FieldLabel="DB"
                             DisplayField="keytypename"
                             ValueField="keytypenum"
-                            Width="350"
+                            Width="250"
                             QueryMode="Local"
                             EmptyText="Select a DB"
                             TypeAhead="true">
@@ -167,9 +160,9 @@
                         <ext:ComboBox
                             ID="cmbMysqlTableList"
                             runat="server"
-                            FieldLabel="Table 列表"
+                            FieldLabel="Table"
                             DisplayField="TABLE_NAME"
-                            Width="350"
+                            Width="250"
                             QueryMode="Local"
                             TypeAhead="true"
                             ForceSelection="true"
@@ -188,7 +181,7 @@
                             </Store>
 
                         </ext:ComboBox>
-                        <ext:TextArea  FieldLabel="SQL" runat="server" ID="txtSQL" Width="600"></ext:TextArea>
+                        <ext:TextArea FieldLabel="SQL" runat="server" ID="txtSQL" Width="600"></ext:TextArea>
 
                         <ext:Button ID="btnSearch" runat="server" Text="表查询" Width="100" Margin="10">
                             <DirectEvents>

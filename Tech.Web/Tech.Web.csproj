@@ -135,8 +135,7 @@
     <Content Include="Webforms\OnlineDev\coludstudio\Default.aspx" />
     <Content Include="Webforms\Plan\mubu\Default.aspx" />
     <Content Include="Webforms\Plan\TODO\Default.aspx" />
-    <Content Include="Webforms\Plan\TODOBak\Default.aspx" />
-    <Content Include="Webforms\SEO\chinaz\Default.aspx" />
+    <Content Include="Webforms\Studio\chinaz\Default.aspx" />
     <Content Include="resources\css\clearad.css" />
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -146,9 +145,9 @@
     <Content Include="resources\images\ooopic_1516204388.png" />
     <Content Include="resources\images\TestLogo.jpg" />
     <Content Include="resources\images\TestLogo.psd" />
-    <Content Include="Webforms\SEO\BaiduSource\Default.aspx" />
+    <Content Include="Webforms\Studio\BaiduSource\Default.aspx" />
     <Content Include="Webforms\BigData\lianjia\Default.aspx" />
-    <Content Include="Webforms\SEO\MtbabyCount\Default.aspx" />
+    <Content Include="Webforms\Studio\MtbabyCount\Default.aspx" />
     <Content Include="Webforms\OnlineDev\uzerme\Default.aspx" />
     <Content Include="Webforms\Plan\wiz\Default.aspx" />
     <Content Include="Webforms\Plan\Processon\Default.aspx" />
