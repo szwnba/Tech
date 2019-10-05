@@ -130,6 +130,7 @@
     <Content Include="Webforms\Article\135Edit\Defa3ult.aspx" />
     <Content Include="Webforms\Article\135Edit\Default.aspx" />
     <Content Include="Webforms\Article\chuangkit\Default.aspx" />
+    <Content Include="Webforms\Article\aiArticle\Default.aspx" />
     <Content Include="Webforms\DBTool\DBSQLGen\Default.aspx" />
     <Content Include="Webforms\DBTool\DBSearch\Default.aspx" />
     <Content Include="Webforms\OnlineDev\coludstudio\Default.aspx" />
@@ -147,6 +148,7 @@
     <Content Include="resources\images\TestLogo.psd" />
     <Content Include="Webforms\Studio\BaiduSource\Default.aspx" />
     <Content Include="Webforms\BigData\lianjia\Default.aspx" />
+    <Content Include="Webforms\Studio\Pay\Default.aspx" />
     <Content Include="Webforms\Studio\MtbabyCount\Default.aspx" />
     <Content Include="Webforms\OnlineDev\uzerme\Default.aspx" />
     <Content Include="Webforms\Plan\wiz\Default.aspx" />

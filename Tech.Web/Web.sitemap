@@ -7,12 +7,12 @@
     <siteMapNode title="流程图" description="No description"  url="/Plan/Processon/" />
   </siteMapNode>
   <siteMapNode title="自媒体" icon=" fa fa-hand-pointer-o">
-    <siteMapNode title="智能写作" description="No description" url="/Article/Processon2/" />
+    <siteMapNode title="智能写作" description="No description" url="/Article/aiArticle/" />
     <siteMapNode title="创客贴" description="No description" url="/Article/chuangkit/" />
     <siteMapNode title="135编辑器" description="No description" url="/Article/135Edit/" />
   </siteMapNode>
   <siteMapNode title="工作室运营" icon=" fa fa-hand-pointer-o">
-    <siteMapNode title="帐单统计" description="No description" url="/Studio/pay/" />
+    <siteMapNode title="帐单统计" description="No description" url="/Studio/Pay/" />
     <siteMapNode title="百度麦麦统计" description="No description" url="/Studio/MtbabyCount/" />
     <siteMapNode title="百度搜索资源平台" description="No description" url="/Studio/BaiduSource/" />
     <siteMapNode title="站长之家" description="No description" url="/Studio/chinaz/" />
